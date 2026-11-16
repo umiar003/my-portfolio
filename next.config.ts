@@ -1,12 +1,17 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
   images: {
-    domains: ['images.unsplash.com', 'assets.aceternity.com', 'img.youtube.com'],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'images.unsplash.com' },
+      { protocol: 'https', hostname: 'assets.aceternity.com' },
+      { protocol: 'https', hostname: 'img.youtube.com' },
+    ],
   },
   eslint: {
-    // Ne bloque PAS le build en cas d'erreurs eslint
+    // Legacy template files have existing lint findings. prebuild checks the new portfolio feature.
     ignoreDuringBuilds: true,
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

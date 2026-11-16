@@ -2,8 +2,6 @@
 
 import FluidCursor from '@/components/FluidCursor';
 import { Button } from '@/components/ui/button';
-import { GithubButton } from '@/components/ui/github-button';
-import WelcomeModal from '@/components/welcome-modal';
 import { motion } from 'framer-motion';
 import {
   BriefcaseBusiness,
@@ -15,7 +13,7 @@ import {
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import AllProjects from '@/components/projects/AllProjects';
+import { SearchEntry } from '@/components/portfolio/search-entry';
 import { Presentation } from '@/components/presentation';
 import Skills from '@/components/skills';
 import Crazy from '@/components/crazy';
@@ -32,7 +30,6 @@ const questionConfig = [
 /* ---------- component ---------- */
 export default function Home() {
   const router = useRouter();
-  const [showProjects, setShowProjects] = useState(false);
   const [showPresentation, setShowPresentation] = useState(false);
   const [showSkills, setShowSkills] = useState(false);
   const [showFun, setShowFun] = useState(false);
@@ -99,11 +96,7 @@ export default function Home() {
         </button>
       </div>
 
-      {showProjects ? (
-        <div className="w-full max-w-5xl mx-auto mt-24">
-          <AllProjects onBack={() => setShowProjects(false)} />
-        </div>
-      ) : showPresentation ? (
+      {showPresentation ? (
         <div className="w-full max-w-5xl mx-auto mt-24">
           <div className="relative">
             <button
@@ -165,7 +158,7 @@ export default function Home() {
             </div> */}
 
             <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
-              Hey, I'm Umair 👋
+              Hey, I&apos;m Umair 👋
             </h2>
             <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
               Motion & Graphic Designer
@@ -184,6 +177,8 @@ export default function Home() {
             />
           </div>
 
+          <SearchEntry />
+
           {/* input + quick buttons */}
           <motion.div
             variants={bottomElementVariants}
@@ -197,7 +192,7 @@ export default function Home() {
                 <Button
                   key={key}
                   onClick={() => {
-                    if (key === 'Projects') setShowProjects(true);
+                    if (key === 'Projects') router.push('/projects');
                     if (key === 'Me') setShowPresentation(true);
                     if (key === 'Skills') setShowSkills(true);
                     if (key === 'Fun') setShowFun(true);
