@@ -13,51 +13,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Umair Portfolio",
-  description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience",
-  keywords: [
-    "Umair", 
-    "Portfolio", 
-    "Developer", 
-    "AI", 
-    "Interactive", 
-    "Memoji", 
-    "Web Development",
-    "Full Stack",
-    "Next.js",
-    "React"
-  ],
-  authors: [
-    {
-      name: "Umair",
-      url: "https://toukoum.fr",
-    },
-  ],
-  creator: "Umair",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://toukoum.fr",
-    title: "Umair Portfolio",
-    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    siteName: "Umair Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Umair Portfolio",
-    description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    creator: "@umair",
-  },
-  icons: {
-    icon: [
-      {
-        url: "/favicon.svg",
-        sizes: "any",
-      }
-    ],
-    shortcut: "/favicon.svg?v=2",
-    apple: "/apple-touch-icon.svg?v=2",
-  },
+  metadataBase: new URL('https://umairvisuals.vercel.app'),
+  title: 'Umair Portfolio',
+  description: 'Video editing, motion graphics, and graphic design by Muhammad Umair. Explore ecommerce campaigns, 3D reels, and creative storytelling.',
+  authors: [{ name: 'Muhammad Umair' }],
+  creator: 'Muhammad Umair',
+  alternates: { canonical: '/' },
+  openGraph: { type: 'website', locale: 'en_US', url: '/', title: 'Umair Portfolio', description: 'Explore video editing, motion graphics, and creative campaigns by Muhammad Umair.', siteName: 'Umair Portfolio', images: [{url:'/landing-memojis.png'}] },
+  twitter: { card:'summary_large_image',title:'Umair Portfolio',description:'Video editing, motion graphics, and creative campaigns.',images:['/landing-memojis.png'] },
+  icons: { icon: '/favicon.svg', shortcut: '/favicon.svg' },
 };
 
 export default function RootLayout({
@@ -68,7 +32,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body

@@ -1,6 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.portfolio-action { display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-height: 40px; border: 1px solid #e5e5e5; border-radius: 12px; background: white; padding: .5rem .8rem; font-size: .75rem; cursor: pointer; }
+.portfolio-action:hover { background: #f5f5f5; }
+.portfolio-chip { display: inline-flex; align-items: center; min-height: 42px; padding: .6rem 1rem; border: 1px solid #e5e5e5; border-radius: 12px; font-size: .8rem; background: white; }
+.portfolio-chip:hover { border-color: #737373; }
+.portfolio-chip-active { background: #171717; border-color: #171717; color: white; }
+:where(a, button, select, input):focus-visible { outline: 2px solid #329696; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

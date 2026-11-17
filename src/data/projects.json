@@ -1,0 +1,1735 @@
+[
+  {
+    "id": "titans",
+    "title": "Titans",
+    "category": "youtube-videos",
+    "cover": "/company-titans.png",
+    "description": "Documentary storytelling about the histories, inventions, rise, and fall of major companies. I created faceless long-form videos in a Magnetise Media-inspired style, combining research-led narratives, motion graphics, and engaging visual storytelling.",
+    "year": "2024",
+    "skills": ["Adobe After Effects", "Adobe Premiere Pro"],
+    "industries": ["business"],
+    "tags": ["business stories", "faceless videos"],
+    "media": [
+      {
+        "id": "ra6yeBDNl84",
+        "type": "video",
+        "youtubeId": "ra6yeBDNl84",
+        "title": "The history of McDonald’s",
+        "description": "The history of McDonald’s, including the McDonald’s Monopoly scandal, told through a faceless business documentary with motion graphics and a Magnetise Media-inspired visual style.",
+        "format": "long-form",
+        "industries": [],
+        "tags": ["mcdonalds", "monopoly", "fast food", "company history"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "IxaW_OWmLtk",
+        "type": "video",
+        "youtubeId": "IxaW_OWmLtk",
+        "title": "The GTA 6 leak",
+        "description": "The story of the Grand Theft Auto 6 leak, presented as a GTA documentary with a structured narrative, motion graphics, and Magnetise Media-inspired editing.",
+        "format": "long-form",
+        "industries": [],
+        "tags": ["gta", "gta6", "grand theft auto", "gaming", "leak"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "KbnJBZ1zRJg",
+        "type": "video",
+        "youtubeId": "KbnJBZ1zRJg",
+        "title": "The rise and fall of Rolls-Royce",
+        "description": "The history, rise, and fall of Rolls-Royce and the creation of a luxury car company, told as a faceless documentary with motion graphics.",
+        "format": "long-form",
+        "industries": [],
+        "tags": ["rolls royce", "luxury cars", "company history"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "yceBueKTRNA",
+        "type": "video",
+        "youtubeId": "yceBueKTRNA",
+        "title": "German industrial power and World War II",
+        "description": "A history documentary about a German industrial tycoon and the business powerhouse connected to World War II, using motion graphics and faceless long-form storytelling.",
+        "format": "long-form",
+        "industries": [],
+        "tags": ["germany", "wwii", "world war 2", "history", "industry"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "gtxfCcMXrdE",
+        "type": "video",
+        "youtubeId": "gtxfCcMXrdE",
+        "title": "Aramco: the king of oil companies",
+        "description": "The history of Saudi Aramco and how it became an oil-industry giant, told through business documentary storytelling and motion graphics.",
+        "format": "long-form",
+        "industries": [],
+        "tags": ["aramco", "oil", "saudi arabia", "energy", "company history"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "rFs4CVgO_ww",
+        "type": "video",
+        "youtubeId": "rFs4CVgO_ww",
+        "title": "The rise of Cartier",
+        "description": "The history and rise of the luxury jewellery and fashion giant Cartier, presented in a Magnetise Media-inspired documentary style.",
+        "format": "long-form",
+        "industries": [],
+        "tags": ["cartier", "jewellery", "jewelry", "luxury", "fashion"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "L23dLbSPzVM",
+        "type": "video",
+        "youtubeId": "L23dLbSPzVM",
+        "title": "The invention and history of Ford",
+        "description": "The invention and history of Ford, following the farmer boy who created a major automotive company, in a faceless documentary with motion graphics.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [
+          "ford",
+          "henry ford",
+          "invention",
+          "automotive",
+          "company history"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "MK38wOYhfUg",
+        "type": "video",
+        "youtubeId": "MK38wOYhfUg",
+        "title": "How an orphan built Rolex",
+        "description": "How an orphan boy built Rolex into one of the world’s best-known luxury watch companies, told through history, documentary editing, and motion graphics.",
+        "format": "long-form",
+        "industries": [],
+        "tags": ["rolex", "watches", "luxury", "company history"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      }
+    ],
+    "styles": [
+      "Documentary",
+      "Faceless long-form",
+      "Motion graphics",
+      "Magnetise Media style"
+    ]
+  },
+  {
+    "id": "richest",
+    "title": "Richest",
+    "category": "youtube-videos",
+    "cover": "/the richest.png",
+    "description": "Faceless long-form documentary videos for TheRichest, exploring business history, economics, politics, and major global stories. I combined motion graphics with documentary editing to make complex topics engaging and easy to follow.",
+    "year": "2024",
+    "skills": ["Adobe After Effects", "Adobe Premiere Pro"],
+    "industries": ["business", "finance"],
+    "tags": ["economics", "documentary", "faceless videos"],
+    "media": [
+      {
+        "id": "5noMYVoZzi4",
+        "type": "video",
+        "youtubeId": "5noMYVoZzi4",
+        "title": "The history of Microsoft",
+        "description": "The history of Microsoft, tracing its evolution from the startup founded by Bill Gates and Paul Allen to a global technology giant, including its pursuit of artificial intelligence.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "bYxDwcrJvGM",
+        "type": "video",
+        "youtubeId": "bYxDwcrJvGM",
+        "title": "What would happen if China collapsed?",
+        "description": "A documentary exploring the hypothetical economic, political, and humanitarian consequences of a potential collapse of China.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "FG9VzxYgys4",
+        "type": "video",
+        "youtubeId": "FG9VzxYgys4",
+        "title": "How iconic companies reinvented themselves",
+        "description": "How Nintendo, Samsung, Amazon, and other iconic companies pivoted their business models to stay relevant, reinvent themselves, and avoid bankruptcy.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "qBjaIPWc-kE",
+        "type": "video",
+        "youtubeId": "qBjaIPWc-kE",
+        "title": "Is India becoming the Switzerland of Asia?",
+        "description": "A documentary-style look at India’s economic development and its comparison with Switzerland, using business and political storytelling.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "Sa06Uo_mH1c",
+        "type": "video",
+        "youtubeId": "Sa06Uo_mH1c",
+        "title": "How cricket became a billion-dollar sport",
+        "description": "The business and economics of cricket and its growth into a 5.3-billion-dollar sport, presented with documentary storytelling and motion graphics.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "jVq2hAvYzlw",
+        "type": "video",
+        "youtubeId": "jVq2hAvYzlw",
+        "title": "The Justin Sun crypto scandal",
+        "description": "A documentary-style examination of the Justin Sun cryptocurrency scandal, SEC allegations, and their financial impact.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "qkEbbC-1cHQ",
+        "type": "video",
+        "youtubeId": "qkEbbC-1cHQ",
+        "title": "Eight cricket scandals that shook the game",
+        "description": "A documentary recounting eight cricket scandals, combining factual sports stories with dramatic narrative editing.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "rZyt9GVuAqs",
+        "type": "video",
+        "youtubeId": "rZyt9GVuAqs",
+        "title": "Why Russia’s economy is booming",
+        "description": "A political and economic documentary exploring the story behind Russia’s economy and its growth against the odds.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      },
+      {
+        "id": "xQLeaXZb0jo",
+        "type": "video",
+        "youtubeId": "xQLeaXZb0jo",
+        "title": "Congo: mineral wealth and poverty",
+        "description": "Despite an estimated $24 trillion in untapped mineral wealth, the Democratic Republic of the Congo remains one of the world’s poorest nations amid political instability, corruption, and humanitarian crises.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public"
+      }
+    ],
+    "styles": [
+      "Documentary",
+      "Faceless long-form",
+      "Motion graphics",
+      "Political storytelling"
+    ]
+  },
+  {
+    "id": "health",
+    "title": "Goodness Nature",
+    "category": "youtube-videos",
+    "cover": "/the-health.png",
+    "description": "Informative, visually appealing educational videos for the Goodness Nature YouTube channel, covering health, nutrition, natural wellness, and the environment. I edited the videos to make each topic clear, engaging, and accessible.",
+    "year": "2024",
+    "skills": ["Adobe Premiere Pro"],
+    "industries": ["health-wellness"],
+    "tags": ["wellness", "educational"],
+    "media": [
+      {
+        "id": "N-VHoFjbe0w",
+        "type": "video",
+        "youtubeId": "N-VHoFjbe0w",
+        "title": "Discover the powerful secret for weight management",
+        "description": "An educational video about research into seaweed-derived alginates added to foods such as bread, exploring weight management and obesity through clear, visually engaging storytelling.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Educational", "Informative storytelling"]
+      },
+      {
+        "id": "ebCjwjwwdR4",
+        "type": "video",
+        "youtubeId": "ebCjwjwwdR4",
+        "title": "Colon cleansers: benefits and risks",
+        "description": "An educational health video exploring colon cleansers, digestive benefits, and risks discussed in the video such as dehydration and electrolyte imbalance.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Educational", "Informative storytelling"]
+      },
+      {
+        "id": "snsT-x61pfs",
+        "type": "video",
+        "youtubeId": "snsT-x61pfs",
+        "title": "The secret life of trees",
+        "description": "An educational nature video about how trees produce oxygen, absorb carbon dioxide, filter fine dust, slow global warming, and support biodiversity.",
+        "format": "long-form",
+        "industries": ["nature"],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Educational", "Informative storytelling"]
+      },
+      {
+        "id": "IuDTpBG-bxc",
+        "type": "video",
+        "youtubeId": "IuDTpBG-bxc",
+        "title": "Nitric oxide and the human body",
+        "description": "A health explainer about nitric oxide, a naturally produced signalling gas, and the video’s discussion of cardiovascular health, exercise performance, brain function, and immune response.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Educational", "Informative storytelling"]
+      },
+      {
+        "id": "regW6ofA-_E",
+        "type": "video",
+        "youtubeId": "regW6ofA-_E",
+        "title": "Ten health benefits of olive oil",
+        "description": "An educational nutrition video exploring olive oil, monounsaturated fats, antioxidants, heart health, cognitive function, weight management, and skin hydration.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Educational", "Informative storytelling"]
+      },
+      {
+        "id": "2y2StmMve68",
+        "type": "video",
+        "youtubeId": "2y2StmMve68",
+        "title": "Goodness Nature — channel introduction",
+        "description": "A channel promotional video introducing Goodness Nature’s focus on natural remedies, proper nutrition, lifestyle changes, and helping audiences pursue healthier lives.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Educational", "Informative storytelling"]
+      }
+    ],
+    "styles": ["Educational", "Faceless long-form", "Informative storytelling"]
+  },
+  {
+    "id": "psychology",
+    "title": "Self-Made Mind",
+    "category": "youtube-videos",
+    "cover": "/self made mind.png",
+    "description": "Emotionally engaging videos for the Self-Made Mind psychology channel, turning topics such as mindset, emotional intelligence, motivation, and personal growth into clear, actionable stories. I used creative editing strategies to make ideas connect with viewers.",
+    "year": "2024",
+    "skills": ["Adobe Premiere Pro"],
+    "industries": ["health-wellness", "education"],
+    "tags": ["psychology", "self improvement", "mindset"],
+    "media": [
+      {
+        "id": "I5g1TuW47wE",
+        "type": "video",
+        "youtubeId": "I5g1TuW47wE",
+        "title": "Disappear into a new you",
+        "description": "A psychology and self-improvement video about solitude, shadow work, stepping away from societal noise, and discovering a new sense of identity.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      },
+      {
+        "id": "9R4z37-jnb4",
+        "type": "video",
+        "youtubeId": "9R4z37-jnb4",
+        "title": "Transform your mindset to overcome challenges",
+        "description": "A motivational psychology video about cleaning your environment, creating micro-habits, and building consistent routines to overcome major life challenges.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      },
+      {
+        "id": "vLZOaIOivd8",
+        "type": "video",
+        "youtubeId": "vLZOaIOivd8",
+        "title": "Twelve signs of psychological maturity",
+        "description": "A psychology video exploring emotional maturity, childhood influences, and the difference between intent and impact through engaging, emotionally resonant editing.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      },
+      {
+        "id": "CTjzCN6AQKU",
+        "type": "video",
+        "youtubeId": "CTjzCN6AQKU",
+        "title": "Addiction, the brain, and recovery",
+        "description": "A psychology video discussing pornography consumption, the brain’s reward system, relationships, and managing compulsive habits without shame.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      },
+      {
+        "id": "jCjkZt42QLs",
+        "type": "video",
+        "youtubeId": "jCjkZt42QLs",
+        "title": "How to break an addiction",
+        "description": "A self-improvement video about replacing instant dopamine triggers with slower fulfilment, changing self-identity, and overcoming compulsive habits.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      },
+      {
+        "id": "r0Kjp6ZKUVE",
+        "type": "video",
+        "youtubeId": "r0Kjp6ZKUVE",
+        "title": "Get your brain back on track",
+        "description": "A motivational video about reducing phone and social media distractions, improving your environment, and using habits rather than relying on motivation.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      },
+      {
+        "id": "b_SuPKs2fkk",
+        "type": "video",
+        "youtubeId": "b_SuPKs2fkk",
+        "title": "The hidden dangers of skipping key life stages",
+        "description": "An emotionally engaging psychology video about suppressed developmental stages, rebellious phases, and the way they may be discussed in relation to later-life crises.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      },
+      {
+        "id": "BBe-53IpLqA",
+        "type": "video",
+        "youtubeId": "BBe-53IpLqA",
+        "title": "A year without pornography and masturbation",
+        "description": "A psychology and personal-growth video exploring the potential energy, mental clarity, and challenges discussed in long-term abstinence from pornography and masturbation.",
+        "format": "long-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Psychology storytelling", "Emotional editing"]
+      }
+    ],
+    "styles": [
+      "Psychology storytelling",
+      "Emotional editing",
+      "Faceless long-form",
+      "Personal growth"
+    ]
+  },
+  {
+    "id": "viral-3d",
+    "title": "Viral 3D",
+    "category": "reels-shorts",
+    "cover": "/viral3d.png",
+    "description": "Highly engaging short-form edits for multiple clients. I transform camera footage and written scripts into viral-style reels using 3D motion graphics, text animation, sound effects, storytelling, and voice-over-led editing.",
+    "year": "2024",
+    "skills": ["Adobe After Effects", "Adobe Premiere Pro"],
+    "industries": [],
+    "tags": ["3d animation", "motion graphics", "viral reels"],
+    "media": [
+      {
+        "id": "i-JhZyUjCQw",
+        "type": "video",
+        "youtubeId": "i-JhZyUjCQw",
+        "title": "Office business advice — 3D reel",
+        "description": "A man shares business advice while standing in his office. I transformed the original camera footage into an engaging viral-style 3D reel with text animation, motion graphics, and sound effects.",
+        "format": "short-form",
+        "industries": ["business"],
+        "tags": [
+          "office",
+          "business advice",
+          "talking head",
+          "before and after"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["3D motion graphics", "Text animation", "Sound design"]
+      },
+      {
+        "id": "WGgdP2oyd7E",
+        "type": "video",
+        "youtubeId": "WGgdP2oyd7E",
+        "title": "Storytelling agency — fast-paced 3D intro",
+        "description": "A fast-paced faceless introduction for an agency that creates stories for brands. Built with motion graphics, 3D motion graphics, and animated text to make the brand introduction engaging.",
+        "format": "short-form",
+        "industries": ["service-business"],
+        "tags": ["agency", "brand intro", "faceless", "storytelling agency"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Fast-paced editing", "3D motion graphics", "Text animation"]
+      },
+      {
+        "id": "hEkoTr9jidg",
+        "type": "video",
+        "youtubeId": "hEkoTr9jidg",
+        "title": "Motivational talking-head transformation",
+        "description": "A man sits in a chair and delivers motivational lines to camera. I transformed the raw footage into an engaging viral-style 3D reel with text animations and sound effects.",
+        "format": "short-form",
+        "industries": ["education"],
+        "tags": ["motivation", "talking head", "before and after"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["3D motion graphics", "Text animation", "Sound design"]
+      },
+      {
+        "id": "M_JrUj3rc7E",
+        "type": "video",
+        "youtubeId": "M_JrUj3rc7E",
+        "title": "Script-led 3D motion-graphics reel",
+        "description": "A fast-paced faceless reel built around a client-provided script, using motion graphics, 3D motion graphics, text animations, and sound effects.",
+        "format": "short-form",
+        "industries": ["automotive"],
+        "tags": ["script to video", "faceless", "client script"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Fast-paced editing",
+          "3D motion graphics",
+          "Text animation",
+          "Sound design"
+        ]
+      },
+      {
+        "id": "B4ga-w2EIag",
+        "type": "video",
+        "youtubeId": "B4ga-w2EIag",
+        "title": "Jonnet speech — talking-head edit",
+        "description": "A talking-head speech edit with captions, engaging text animation, and sound design, included in the Viral 3D short-form collection.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["talking head", "speech", "captions"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Talking-head editing", "Text animation", "Sound design"]
+      },
+      {
+        "id": "Mdr5i8Ys-_E",
+        "type": "video",
+        "youtubeId": "Mdr5i8Ys-_E",
+        "title": "SaveMoney Hub — insurance company intro",
+        "description": "A script-led insurance-company introduction for SaveMoney Hub. I added background voice-over and animated motion graphics to turn the client script into an engaging viral-style brand video.",
+        "format": "short-form",
+        "industries": ["finance", "insurance", "service-business"],
+        "tags": [
+          "insurance",
+          "company intro",
+          "brand intro",
+          "script to video",
+          "voice over",
+          "savemoney hub"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "3D motion graphics",
+          "Text animation",
+          "Voice-over storytelling"
+        ]
+      },
+      {
+        "id": "D9e96dcTfeA",
+        "type": "video",
+        "youtubeId": "D9e96dcTfeA",
+        "title": "Wedding insurance — script-to-video explainer",
+        "description": "An insurance-company introduction about wedding insurance. Starting with the client’s script, I added background voice-over and created an engaging viral-style video with animated text and motion graphics.",
+        "format": "short-form",
+        "industries": ["insurance", "service-business"],
+        "tags": [
+          "insurance",
+          "wedding insurance",
+          "company intro",
+          "script to video",
+          "voice over",
+          "service ad"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "3D motion graphics",
+          "Text animation",
+          "Voice-over storytelling"
+        ]
+      }
+    ],
+    "styles": [
+      "3D motion graphics",
+      "Text animation",
+      "Sound design",
+      "Fast-paced editing",
+      "Viral reels"
+    ]
+  },
+  {
+    "id": "wildlife",
+    "title": "Wildlife",
+    "category": "reels-shorts",
+    "cover": "/wildlife.png",
+    "description": "Curiosity-led animal stories and factual wildlife shorts, edited with a nature-documentary approach inspired by BBC Our Planet. I create engaging hooks and suspenseful storytelling around animals, their behaviours, and the natural world.",
+    "year": "2024",
+    "skills": ["Video editing", "Storytelling"],
+    "industries": ["nature"],
+    "tags": ["animals", "wildlife", "shorts"],
+    "media": [
+      {
+        "id": "RHziFE4tG9o",
+        "type": "video",
+        "youtubeId": "RHziFE4tG9o",
+        "title": "Polar bear and seal: an Arctic hunt",
+        "description": "A hungry polar bear stalks and hunts a seal on Arctic ice. A curiosity-led wildlife short using suspenseful storytelling and a nature-documentary style.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      },
+      {
+        "id": "EGA3tBWFE70",
+        "type": "video",
+        "youtubeId": "EGA3tBWFE70",
+        "title": "Iguana escapes a swarm of snakes",
+        "description": "A tiny iguana narrowly escapes a pursuing swarm of racer snakes to reach safety, told through suspenseful, curiosity-driven wildlife editing.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      },
+      {
+        "id": "qCCMVeten2k",
+        "type": "video",
+        "youtubeId": "qCCMVeten2k",
+        "title": "The praying mantis: an ambush predator",
+        "description": "A praying mantis demonstrates stealth and agility as an ambush predator. An engaging animal-facts short with nature-documentary storytelling.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      },
+      {
+        "id": "3bJhO71boUw",
+        "type": "video",
+        "youtubeId": "3bJhO71boUw",
+        "title": "Megalodon: the prehistoric ocean giant",
+        "description": "An exploration of Megalodon, the colossal prehistoric shark that ruled ancient ocean depths, presented as an engaging wildlife documentary short.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      },
+      {
+        "id": "y8r1GC2aPWY",
+        "type": "video",
+        "youtubeId": "y8r1GC2aPWY",
+        "title": "Wolves: loyalty, beauty, and hunting",
+        "description": "An animal-storytelling short about wolves, their pack loyalty, striking appearance, and hunting prowess.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      },
+      {
+        "id": "p3h5ff7wJ9U",
+        "type": "video",
+        "youtubeId": "p3h5ff7wJ9U",
+        "title": "Ibex goats defy gravity",
+        "description": "Ibex goats climb steep mountain cliffs and make precise leaps over difficult terrain, presented through curiosity-led nature-documentary editing.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      },
+      {
+        "id": "sSucOVi4C_Q",
+        "type": "video",
+        "youtubeId": "sSucOVi4C_Q",
+        "title": "The story of Bob Jr., the Serengeti lion",
+        "description": "A look at Snyggve, also known as Bob Jr., the legendary Serengeti lion known for his black mane and leadership.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      },
+      {
+        "id": "GhzxHePVPmk",
+        "type": "video",
+        "youtubeId": "GhzxHePVPmk",
+        "title": "The fearless honey badger",
+        "description": "A wildlife short about the honey badger’s fearlessness, tough skin, and encounters with larger predators, told with a strong curiosity hook.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": [
+          "Nature documentary",
+          "BBC Our Planet-inspired",
+          "Curiosity hooks"
+        ]
+      }
+    ],
+    "styles": [
+      "Nature documentary",
+      "BBC Our Planet-inspired",
+      "Curiosity hooks",
+      "Animal storytelling"
+    ]
+  },
+  {
+    "id": "sports",
+    "title": "Sports",
+    "category": "reels-shorts",
+    "cover": "/sports.png",
+    "description": "For Full Throttle F1, I created high-retention short-form videos covering Formula 1 stories, surprising facts, legendary moments, and real-life events. Each edit uses a strong hook and engaging storytelling for YouTube Shorts and social media.",
+    "year": "2024",
+    "skills": ["Adobe Premiere Pro"],
+    "industries": ["sports"],
+    "tags": ["formula 1", "f1", "racing"],
+    "media": [
+      {
+        "id": "5k5grzcY9-U",
+        "type": "video",
+        "youtubeId": "5k5grzcY9-U",
+        "title": "What happens if a F1 car is to slow #f1 #formula1",
+        "description": "What happens if a F1 car is to slow. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "PgNVdCKkqFM",
+        "type": "video",
+        "youtubeId": "PgNVdCKkqFM",
+        "title": "How much a F1 car is worth #formula1 #f1driver",
+        "description": "How much a F1 car is worth. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "UR7076QsCGk",
+        "type": "video",
+        "youtubeId": "UR7076QsCGk",
+        "title": "F1 Drivers Steering With NO HANDS!",
+        "description": "F1 Drivers Steering With NO HANDS!. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "BBEOFFf2ac4",
+        "type": "video",
+        "youtubeId": "BBEOFFf2ac4",
+        "title": "Why F1 Driver CRASH on PURPOSE!",
+        "description": "Why F1 Driver CRASH on PURPOSE!. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "UFoGIBvI7lQ",
+        "type": "video",
+        "youtubeId": "UFoGIBvI7lQ",
+        "title": "Why Max Verstappen doesn’t drink water during races #formula1 #f1",
+        "description": "Why Max Verstappen doesn’t drink water during races. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "MNR9iY1CViI",
+        "type": "video",
+        "youtubeId": "MNR9iY1CViI",
+        "title": "F1 Driver Almost DIES!",
+        "description": "F1 Driver Almost DIES!. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "KhsWFxzvX-o",
+        "type": "video",
+        "youtubeId": "KhsWFxzvX-o",
+        "title": "Why Oscar Piastri was canceled #formula1 #f1",
+        "description": "Why Oscar Piastri was canceled. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "ofm2hZZR8bk",
+        "type": "video",
+        "youtubeId": "ofm2hZZR8bk",
+        "title": "F1s weirdest rule #f1 #formula1",
+        "description": "F1s weirdest rule. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "NP4RLipfkDY",
+        "type": "video",
+        "youtubeId": "NP4RLipfkDY",
+        "title": "Why F1 Tyres SUCK! #f1 #formula1",
+        "description": "Why F1 Tyres SUCK!. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "pHkxU7pJlfI",
+        "type": "video",
+        "youtubeId": "pHkxU7pJlfI",
+        "title": "Why Nike doesn’t make shoes for F1 anymore #f1 #formula1",
+        "description": "Why Nike doesn’t make shoes for F1 anymore. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "vhjO8fPsKik",
+        "type": "video",
+        "youtubeId": "vhjO8fPsKik",
+        "title": "Jet Engine in f1 car #f1 #formula1",
+        "description": "Jet Engine in f1 car. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "aw8nU7ubVvM",
+        "type": "video",
+        "youtubeId": "aw8nU7ubVvM",
+        "title": "Weirdest Race Ending #f1 #formula1",
+        "description": "Weirdest Race Ending. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "AlejuoZ-Ths",
+        "type": "video",
+        "youtubeId": "AlejuoZ-Ths",
+        "title": "Ferrari vs Mercedes #formula1 #f1",
+        "description": "Ferrari vs Mercedes. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      },
+      {
+        "id": "KGzduOWdISI",
+        "type": "video",
+        "youtubeId": "KGzduOWdISI",
+        "title": "The Nico Rosberg Curse #formula1 #f1",
+        "description": "The Nico Rosberg Curse. A Full Throttle F1 short that combines a viral hook, factual Formula 1 storytelling, and high-retention editing for YouTube Shorts and social media.",
+        "format": "short-form",
+        "industries": [],
+        "tags": ["formula 1", "f1", "racing", "facts", "viral hook"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Viral hooks", "High-retention editing", "Fact storytelling"]
+      }
+    ],
+    "styles": [
+      "Viral hooks",
+      "High-retention editing",
+      "Fact storytelling",
+      "Short-form storytelling"
+    ]
+  },
+  {
+    "id": "book-cover-hub",
+    "title": "Book Cover Hub",
+    "category": "reels-shorts",
+    "cover": "/book cover.png",
+    "description": "Book Cover Hub is a book-cover design agency that designs first and bills later. I created faceless videos, promotional content, and client-feedback videos to showcase the service, support authors, and communicate the brand’s offer.",
+    "year": "2024",
+    "skills": ["Video editing", "Motion graphics"],
+    "industries": ["publishing", "service-business"],
+    "tags": ["books", "authors", "book cover design", "publishing services"],
+    "media": [
+      {
+        "id": "810o-wjmuVs",
+        "type": "video",
+        "youtubeId": "810o-wjmuVs",
+        "title": "\"Octavia E. Butler's journey is a testament to resilience and dedication",
+        "description": "Octavia E. Butler's journey is a testament to resilience and dedication. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "KXUvdwOoHi4",
+        "type": "video",
+        "youtubeId": "KXUvdwOoHi4",
+        "title": "Becoming a successful author! #booktok #bookcoverdesign #publishing #bookcover #readertok",
+        "description": "Becoming a successful author! #booktok #bookcoverdesign #publishing #bookcover #readertok. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "p0LWlRbp9sk",
+        "type": "video",
+        "youtubeId": "p0LWlRbp9sk",
+        "title": "Before you hit publish, remember to proofread!",
+        "description": "Before you hit publish, remember to proofread!. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "pb1q-cR7F54",
+        "type": "video",
+        "youtubeId": "pb1q-cR7F54",
+        "title": "This simple technique to overcome writers block is genius!",
+        "description": "This simple technique to overcome writers block is genius!. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "HEo84rhXJFI",
+        "type": "video",
+        "youtubeId": "HEo84rhXJFI",
+        "title": "Boost your book sales by 10X with these three tips",
+        "description": "Boost your book sales by 10X with these three tips. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "8n67RMrdyng",
+        "type": "video",
+        "youtubeId": "8n67RMrdyng",
+        "title": "We are the only design agency in the world to design first and bill later!",
+        "description": "An agency promotional video explaining Book Cover Hub’s distinctive offer: design first and bill later. Faceless service-business content that showcases book-cover design and introduces the brand.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "design agency",
+          "service ad",
+          "brand intro",
+          "book cover design",
+          "design first bill later"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "YIZlEOSsDTE",
+        "type": "video",
+        "youtubeId": "YIZlEOSsDTE",
+        "title": "Choosing the perfect book title is an art!",
+        "description": "Choosing the perfect book title is an art!. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "zJuFBd5-wOk",
+        "type": "video",
+        "youtubeId": "zJuFBd5-wOk",
+        "title": "Your book proposal is your ticket to a fantastic deal. Include these 7 key elements!",
+        "description": "Your book proposal is your ticket to a fantastic deal. Include these 7 key elements!. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "5iMY8IMB8cA",
+        "type": "video",
+        "youtubeId": "5iMY8IMB8cA",
+        "title": "Building your author brand is a game-changer. Focus on the quality of your writing and craft!",
+        "description": "Building your author brand is a game-changer. Focus on the quality of your writing and craft!. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "LcnA3FvYsW8",
+        "type": "video",
+        "youtubeId": "LcnA3FvYsW8",
+        "title": "Behind every successful author is a story of struggle and perseverance!",
+        "description": "Behind every successful author is a story of struggle and perseverance!. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "SyqpbF_cHOs",
+        "type": "video",
+        "youtubeId": "SyqpbF_cHOs",
+        "title": "Avoid these common mistakes as a self-published author.",
+        "description": "Avoid these common mistakes as a self-published author.. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "3EAh8H7p_0g",
+        "type": "video",
+        "youtubeId": "3EAh8H7p_0g",
+        "title": "Take a page from the music industry and create a 'street team' for your book.",
+        "description": "Take a page from the music industry and create a 'street team' for your book.. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "6QZNQ5VRDIU",
+        "type": "video",
+        "youtubeId": "6QZNQ5VRDIU",
+        "title": "self publishing tips",
+        "description": "self publishing tips. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "oWFHQwxM9k4",
+        "type": "video",
+        "youtubeId": "oWFHQwxM9k4",
+        "title": "John Green advises against writing for money or fame.",
+        "description": "John Green advises against writing for money or fame.. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "oHg1-vmLeI8",
+        "type": "video",
+        "youtubeId": "oHg1-vmLeI8",
+        "title": "Follow the headlights with Andre Dubus's writing technique.",
+        "description": "Follow the headlights with Andre Dubus's writing technique.. A faceless Book Cover Hub video for authors and self-publishing audiences, using engaging editing to communicate publishing advice and promote a book-cover design service.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "authors",
+          "self publishing",
+          "book cover design",
+          "faceless videos"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Faceless videos", "Educational storytelling"]
+      },
+      {
+        "id": "VglpZNq7-4A",
+        "type": "video",
+        "youtubeId": "VglpZNq7-4A",
+        "title": "Book Cover Design | Mariana reviews book cover hub",
+        "description": "A client-feedback video in which Mariana reviews Book Cover Hub’s book-cover design service. A testimonial edit that communicates the customer experience and builds trust in the agency.",
+        "format": "short-form",
+        "industries": [],
+        "tags": [
+          "client feedback",
+          "testimonial",
+          "customer review",
+          "book cover design"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Client feedback", "Testimonial"]
+      }
+    ],
+    "styles": [
+      "Faceless videos",
+      "Client feedback",
+      "Service promotion",
+      "Educational storytelling"
+    ]
+  },
+  {
+    "id": "t-shirt-brand",
+    "title": "Trufanism",
+    "category": "ecommerce",
+    "cover": "/tshirts.png",
+    "description": "Marketing and advertising for Trufanism, an ecommerce T-shirt brand. I created campaign promos, product-showcase videos, motion-graphics reels, and sale announcements, including comic-style edits and horizontal campaigns.",
+    "year": "2024",
+    "skills": ["Adobe After Effects", "Adobe Premiere Pro"],
+    "industries": ["fashion", "retail"],
+    "tags": ["t shirts", "clothing", "product ads", "ecommerce"],
+    "media": [
+      {
+        "id": "PJ3jm5xxUk4",
+        "type": "video",
+        "youtubeId": "PJ3jm5xxUk4",
+        "title": "Sale reel — 20% off your first order",
+        "description": "A sale-announcement motion-graphics reel promoting 20% off the first order for Trufanism’s T-shirts.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": [
+          "sale",
+          "discount",
+          "20 percent",
+          "first order",
+          "motion graphics"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Sale announcements"]
+      },
+      {
+        "id": "dFYD0d3CzNc",
+        "type": "video",
+        "youtubeId": "dFYD0d3CzNc",
+        "title": "Sale announcement — Trufanism",
+        "description": "Another sale motion-graphics reel announcing 20% off a first order, designed for an ecommerce clothing campaign.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": ["sale", "discount", "20 percent", "first order"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Sale announcements"]
+      },
+      {
+        "id": "WBRqy_e7Lv0",
+        "type": "video",
+        "youtubeId": "WBRqy_e7Lv0",
+        "title": "T-shirt product showcase",
+        "description": "A motion-graphics product-showcase video highlighting Trufanism’s T-shirts and clothing designs.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": ["product showcase", "t shirts", "motion graphics"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Product showcase"]
+      },
+      {
+        "id": "Npqph-a-vnE",
+        "type": "video",
+        "youtubeId": "Npqph-a-vnE",
+        "title": "T-shirt collection showcase",
+        "description": "An ecommerce product-showcase edit using motion graphics to present T-shirts and brand designs.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": ["product showcase", "clothing", "motion graphics"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Product showcase"]
+      },
+      {
+        "id": "bv1vnJ1Kf2s",
+        "type": "video",
+        "youtubeId": "bv1vnJ1Kf2s",
+        "title": "Comic-style T-shirt showcase",
+        "description": "A comic-style motion-graphics product-showcase video for Trufanism’s T-shirts.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": ["comic style", "product showcase", "t shirts"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Product showcase", "Comic style"]
+      },
+      {
+        "id": "UnMjNbGLAbc",
+        "type": "video",
+        "youtubeId": "UnMjNbGLAbc",
+        "title": "Comic-style clothing promo",
+        "description": "A comic-inspired motion-graphics edit showcasing clothing products for an ecommerce campaign.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": ["comic style", "product showcase", "clothing"],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Product showcase", "Comic style"]
+      },
+      {
+        "id": "0TkjGl2bwIE",
+        "type": "video",
+        "youtubeId": "0TkjGl2bwIE",
+        "title": "Horizontal T-shirt campaign promo",
+        "description": "A horizontal campaign promotional video combining T-shirt product showcases and motion graphics.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": [
+          "horizontal",
+          "landscape",
+          "campaign promo",
+          "product showcase"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Campaign promo", "Horizontal editing"]
+      },
+      {
+        "id": "Q-4Y4TDVGWo",
+        "type": "video",
+        "youtubeId": "Q-4Y4TDVGWo",
+        "title": "Horizontal clothing campaign",
+        "description": "A horizontal motion-graphics campaign promo showcasing Trufanism’s clothing products.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": [
+          "horizontal",
+          "landscape",
+          "campaign promo",
+          "product showcase"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Motion graphics", "Campaign promo", "Horizontal editing"]
+      }
+    ],
+    "styles": [
+      "Motion graphics",
+      "Product showcase",
+      "Sale announcements",
+      "Comic style",
+      "Campaign promo"
+    ]
+  },
+  {
+    "id": "farmers4u",
+    "title": "Farmers4u",
+    "category": "ecommerce",
+    "cover": "/fruits.jpg",
+    "description": "For Farmers4u, an ecommerce fruit and vegetable brand, I designed creative professional social media posts and promotional videos for Facebook and Instagram, helping showcase fresh produce and build brand visibility.",
+    "year": "2024",
+    "skills": ["Graphic design", "Video editing", "Motion graphics"],
+    "industries": ["food", "retail"],
+    "tags": [
+      "fruit",
+      "vegetables",
+      "fresh produce",
+      "product ads",
+      "ecommerce"
+    ],
+    "media": [
+      {
+        "id": "laCouzGYZGU",
+        "type": "video",
+        "youtubeId": "laCouzGYZGU",
+        "title": "Farmers4u — a 2D animated brand story",
+        "description": "A story-led promotional video for Farmers4u using 2D character animation to introduce the fresh-fruit and vegetable brand. Created for ecommerce and social media marketing.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": [
+          "2d animation",
+          "character animation",
+          "brand story",
+          "fruit",
+          "vegetables",
+          "facebook",
+          "instagram",
+          "promo"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["2D character animation", "Storytelling"]
+      },
+      {
+        "id": "01",
+        "type": "image",
+        "src": "/fruits/01.webp",
+        "title": "Farmers4u Fruits Image 1"
+      },
+      {
+        "id": "02",
+        "type": "image",
+        "src": "/fruits/02.webp",
+        "title": "Farmers4u Fruits Image 2"
+      },
+      {
+        "id": "03",
+        "type": "image",
+        "src": "/fruits/03.webp",
+        "title": "Farmers4u Fruits Image 3"
+      },
+      {
+        "id": "04",
+        "type": "image",
+        "src": "/fruits/04.webp",
+        "title": "Farmers4u Fruits Image 4"
+      },
+      {
+        "id": "05",
+        "type": "image",
+        "src": "/fruits/05.webp",
+        "title": "Farmers4u Fruits Image 5"
+      },
+      {
+        "id": "06",
+        "type": "image",
+        "src": "/fruits/06.webp",
+        "title": "Farmers4u Fruits Image 6"
+      },
+      {
+        "id": "07",
+        "type": "image",
+        "src": "/fruits/07.webp",
+        "title": "Farmers4u Fruits Image 7"
+      },
+      {
+        "id": "08",
+        "type": "image",
+        "src": "/fruits/08.webp",
+        "title": "Farmers4u Fruits Image 8"
+      },
+      {
+        "id": "09",
+        "type": "image",
+        "src": "/fruits/09.webp",
+        "title": "Farmers4u Fruits Image 9"
+      },
+      {
+        "id": "10",
+        "type": "image",
+        "src": "/fruits/10.webp",
+        "title": "Farmers4u Fruits Image 10"
+      },
+      {
+        "id": "11",
+        "type": "image",
+        "src": "/fruits/11.webp",
+        "title": "Farmers4u Fruits Image 11"
+      },
+      {
+        "id": "12",
+        "type": "image",
+        "src": "/fruits/12.webp",
+        "title": "Farmers4u Fruits Image 12"
+      },
+      {
+        "id": "13",
+        "type": "image",
+        "src": "/fruits/13.webp",
+        "title": "Farmers4u Fruits Image 13"
+      },
+      {
+        "id": "14",
+        "type": "image",
+        "src": "/fruits/14.webp",
+        "title": "Farmers4u Fruits Image 14"
+      },
+      {
+        "id": "15",
+        "type": "image",
+        "src": "/fruits/15.webp",
+        "title": "Farmers4u Fruits Image 15"
+      },
+      {
+        "id": "16",
+        "type": "image",
+        "src": "/fruits/16.webp",
+        "title": "Farmers4u Fruits Image 16"
+      }
+    ],
+    "styles": [
+      "2D character animation",
+      "Story-led promo",
+      "Social media graphics",
+      "Product marketing"
+    ]
+  },
+  {
+    "id": "amedeo-exclusive",
+    "title": "Amedeo Exclusive",
+    "category": "ecommerce",
+    "cover": "/amedeo.jpg",
+    "description": "Luxury creative work for Amedeo Exclusive: short video ads, product-photoshoot edits, model-walk videos, social media graphics, sale graphics, website and print banners, shopping-bag design, logos, and other brand materials. Product work includes shoes, dress shirts, ties, T-shirts, gloves, jackets, hoodies, and sweaters.",
+    "year": "2024",
+    "skills": ["Adobe After Effects", "Adobe Premiere Pro", "Graphic design"],
+    "industries": ["fashion", "retail"],
+    "tags": [
+      "menswear",
+      "luxury fashion",
+      "clothing",
+      "product ads",
+      "ecommerce"
+    ],
+    "media": [
+      {
+        "id": "SMT3GJEZ8j8",
+        "type": "video",
+        "youtubeId": "SMT3GJEZ8j8",
+        "title": "Amedeo Exclusive × Porsche",
+        "description": "A luxury brand-collaboration video showcasing Amedeo Exclusive’s feature with Porsche. A high-end promotional edit combining luxury fashion, automotive branding, and premium visual presentation.",
+        "format": "advertisement",
+        "industries": ["automotive"],
+        "tags": [
+          "porsche",
+          "luxury",
+          "brand collaboration",
+          "premium fashion",
+          "advertisement"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Luxury editing", "Brand collaboration", "Short video ads"]
+      },
+      {
+        "id": "long-banner-1",
+        "type": "image",
+        "src": "/amedeo/long banner-1.jpg",
+        "title": "Amedeo Long Banner 1"
+      },
+      {
+        "id": "long-banner-2",
+        "type": "image",
+        "src": "/amedeo/long banner-2.jpg",
+        "title": "Amedeo Long Banner 2"
+      },
+      {
+        "id": "long-banner-3",
+        "type": "image",
+        "src": "/amedeo/long banner-3.jpg",
+        "title": "Amedeo Long Banner 3"
+      },
+      {
+        "id": "ONLPHzzviAY",
+        "type": "video",
+        "youtubeId": "ONLPHzzviAY",
+        "title": "Amedeo Exclusive — fashion photoshoot",
+        "description": "A luxury product-photoshoot and model-walk video edit for Amedeo Exclusive’s menswear collection, with high-end fashion presentation and premium brand styling.",
+        "format": "advertisement",
+        "industries": [],
+        "tags": [
+          "photoshoot",
+          "models",
+          "model walk",
+          "menswear",
+          "fashion",
+          "luxury",
+          "product showcase"
+        ],
+        "metadataSource": "owner-project-notes",
+        "availability": "public",
+        "styles": ["Luxury editing", "Product photoshoot", "Fashion editing"]
+      },
+      {
+        "id": "bag-image",
+        "type": "image",
+        "src": "/amedeo/bag image.jpg",
+        "title": "Amedeo Bag Image"
+      },
+      {
+        "id": "product-1",
+        "type": "image",
+        "src": "/amedeo/product-1.jpg",
+        "title": "Amedeo Product 1"
+      },
+      {
+        "id": "product-2",
+        "type": "image",
+        "src": "/amedeo/product-2.jpg",
+        "title": "Amedeo Product 2"
+      },
+      {
+        "id": "product-3",
+        "type": "image",
+        "src": "/amedeo/product-3.jpg",
+        "title": "Amedeo Product 3"
+      },
+      {
+        "id": "product-4",
+        "type": "image",
+        "src": "/amedeo/product-4.jpg",
+        "title": "Amedeo Product 4"
+      },
+      {
+        "id": "product-5",
+        "type": "image",
+        "src": "/amedeo/product-5.jpg",
+        "title": "Amedeo Product 5"
+      },
+      {
+        "id": "product-6",
+        "type": "image",
+        "src": "/amedeo/product-6.jpg",
+        "title": "Amedeo Product 6"
+      },
+      {
+        "id": "product-7",
+        "type": "image",
+        "src": "/amedeo/product-7.jpg",
+        "title": "Amedeo Product 7"
+      },
+      {
+        "id": "product-8",
+        "type": "image",
+        "src": "/amedeo/product-8.jpg",
+        "title": "Amedeo Product 8"
+      },
+      {
+        "id": "product-9",
+        "type": "image",
+        "src": "/amedeo/product-9.jpg",
+        "title": "Amedeo Product 9"
+      },
+      {
+        "id": "product-10",
+        "type": "image",
+        "src": "/amedeo/product-10.jpg",
+        "title": "Amedeo Product 10"
+      },
+      {
+        "id": "product-11",
+        "type": "image",
+        "src": "/amedeo/product-11.jpg",
+        "title": "Amedeo Product 11"
+      },
+      {
+        "id": "product-12",
+        "type": "image",
+        "src": "/amedeo/product-12.jpg",
+        "title": "Amedeo Product 12"
+      },
+      {
+        "id": "product-13",
+        "type": "image",
+        "src": "/amedeo/product-13.jpg",
+        "title": "Amedeo Product 13"
+      },
+      {
+        "id": "product-14",
+        "type": "image",
+        "src": "/amedeo/product-14.jpg",
+        "title": "Amedeo Product 14"
+      },
+      {
+        "id": "product-15",
+        "type": "image",
+        "src": "/amedeo/product-15.jpg",
+        "title": "Amedeo Product 15"
+      }
+    ],
+    "styles": [
+      "Luxury editing",
+      "Product photoshoot",
+      "Short video ads",
+      "Social media design",
+      "Brand identity"
+    ]
+  }
+]

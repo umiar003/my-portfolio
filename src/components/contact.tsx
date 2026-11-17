@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 
 export function Contact() {
@@ -21,7 +20,7 @@ export function Contact() {
       },
       {
         name: 'Whatsapp',
-        url: 'https://www.youtube.com/@iamumair003',
+        url: 'https://api.whatsapp.com/send?phone=923245421874',
       },
     ],
   };
