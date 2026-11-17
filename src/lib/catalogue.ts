@@ -23,6 +23,51 @@ export const industryLabels: Record<string, string> = {
   automotive: 'Automotive',
 };
 
+// Broad browse groups keep a small portfolio discoverable; specific industry labels remain on the work.
+export const industryFilters = [
+  {
+    id: 'business-finance',
+    title: 'Business & finance',
+    industries: ['business', 'finance'],
+  },
+  {
+    id: 'brands-services',
+    title: 'Brands & services',
+    industries: [
+      'service-business',
+      'publishing',
+      'insurance',
+      'retail',
+      'food',
+      'fashion',
+    ],
+  },
+  {
+    id: 'health-learning',
+    title: 'Health & personal growth',
+    industries: ['health-wellness', 'education'],
+  },
+  {
+    id: 'fashion-retail',
+    title: 'Fashion & ecommerce',
+    industries: ['fashion', 'retail', 'food'],
+  },
+  {
+    id: 'sports-automotive',
+    title: 'Sports & automotive',
+    industries: ['sports', 'automotive'],
+  },
+  { id: 'nature-wildlife', title: 'Nature & wildlife', industries: ['nature'] },
+];
+
+export function resolveIndustryFilter(id?: string) {
+  if (!id) return undefined;
+  return (
+    industryFilters.find((group) => group.id === id) ??
+    industryFilters.find((group) => group.industries.includes(id))
+  );
+}
+
 export interface Media {
   id: string;
   type: 'video' | 'image';
@@ -33,6 +78,7 @@ export interface Media {
   format?: 'short-form' | 'long-form' | 'advertisement';
   industries?: string[];
   tags?: string[];
+  styles?: string[];
   orientation?: 'portrait' | 'landscape';
   metadataSource?: string;
   availability?: string;
@@ -48,6 +94,7 @@ export interface Project {
   skills: string[];
   industries: string[];
   tags: string[];
+  styles?: string[];
   media: Media[];
 }
 

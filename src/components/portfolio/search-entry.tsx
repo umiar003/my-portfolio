@@ -17,7 +17,7 @@ export function SearchEntry() {
           id="home-search"
           type="search"
           name="q"
-          placeholder="Find work: ecommerce ads, 3D reels…"
+          placeholder="Find a video, subject, or editing style…"
           className="min-w-0 flex-1 bg-transparent py-2 text-base outline-none"
         />
         <button className="rounded-xl bg-neutral-900 px-4 py-2 text-sm text-white">
@@ -27,7 +27,7 @@ export function SearchEntry() {
       <div className="mt-3 flex flex-wrap justify-center gap-2 text-xs text-neutral-500">
         <span className="py-1">Explore</span>
         {[
-          ['Ecommerce', 'ecommerce'],
+          ['Documentary', 'documentary'],
           ['3D reels', '3d reels'],
           ['Service ads', 'service ads'],
         ].map(([label, q]) => (

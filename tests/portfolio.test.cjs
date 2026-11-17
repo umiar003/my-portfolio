@@ -22,14 +22,16 @@ const {
   projectHref,
   videoHref,
   relatedVideos,
+  resolveIndustryFilter,
 } = require('../src/lib/catalogue.ts');
 const {
   createPortfolioSearch,
   searchItems,
+  resolveBrowseFilters,
 } = require('../src/lib/portfolio-search.ts');
 const search = createPortfolioSearch();
 
-test('all original videos survive migration exactly once', () => {
+test('all retained original videos survive exactly once and Royal is removed', () => {
   const actual = projects
     .flatMap((p) =>
       p.media.filter((m) => m.type === 'video').map((m) => m.youtubeId)
@@ -43,7 +45,10 @@ test('all original videos survive migration exactly once', () => {
       `Original video ${id} must be preserved exactly once`
     );
   assert.equal(new Set(actual).size, actual.length);
-  assert(projects.length >= 12);
+  assert.equal(projects.length, 11);
+  assert.equal(actual.length, 87);
+  assert.equal(getProject('royal'), undefined);
+  assert(!searchItems.some((item) => item.href.includes('/royal')));
 });
 test('identifiers, media, references, and route targets are valid', () => {
   assert.equal(new Set(projects.map((p) => p.id)).size, projects.length);
@@ -106,19 +111,99 @@ test('car wash alternatives are labelled separately and never fabricated as exac
   );
   assert(found.related.every((r) => !found.matches.some((m) => m.id === r.id)));
 });
-test('explicit filters apply to exact and related results', () => {
-  for (const q of ['ecommerce ads', 'car wash ads', '']) {
-    const found = search.search(q, {
+test('category browsing is independent and industry overrides old combined filters', () => {
+  const ecommerce = search.search('', { category: 'ecommerce' });
+  assert(ecommerce.matches.every((item) => item.category === 'ecommerce'));
+  const industry = search.search('', {
+    category: 'youtube-videos',
+    industry: 'brands-services',
+  });
+  assert(industry.matches.some((item) => item.category === 'reels-shorts'));
+  assert(industry.matches.some((item) => item.category === 'ecommerce'));
+  const group = resolveIndustryFilter('brands-services');
+  assert(
+    industry.matches.every((item) =>
+      item.industries.some((value) => group.industries.includes(value))
+    )
+  );
+  assert.deepEqual(
+    resolveBrowseFilters({ category: 'ecommerce', industry: 'business' }),
+    { industry: 'business-finance' }
+  );
+  assert.deepEqual(
+    search.search('insurance', {
       category: 'ecommerce',
-      industry: 'fashion',
-      format: 'advertisement',
-    });
-    for (const item of [...found.matches, ...found.related]) {
-      assert.equal(item.category, 'ecommerce');
-      assert(item.industries.includes('fashion'));
-      assert.equal(item.format, 'advertisement');
-    }
+      industry: 'brands-services',
+    }),
+    search.search('insurance', { industry: 'brands-services' })
+  );
+});
+
+test('owner descriptions are searchable even when a subject is absent from tags', () => {
+  const result = search.search('seaweed').matches;
+  assert(result.some((item) => item.id === 'video:N-VHoFjbe0w'));
+  assert(
+    !searchItems
+      .find((item) => item.id === 'video:N-VHoFjbe0w')
+      .tags.includes('seaweed')
+  );
+  assert(
+    search
+      .search('carbon dioxide')
+      .matches.some((item) => item.id === 'video:snsT-x61pfs')
+  );
+  assert(
+    search
+      .search('shadow work')
+      .matches.some((item) => item.id === 'video:I5g1TuW47wE')
+  );
+  assert(
+    search
+      .search('micro habits')
+      .matches.some((item) => item.id === 'video:9R4z37-jnb4')
+  );
+});
+test('McDonalds spellings resolve to the correct documentary', () => {
+  for (const phrase of [
+    'mcdonals',
+    'McDonalds',
+    "McDonald's",
+    'history of mcdonals',
+  ]) {
+    const results = search
+      .search(phrase)
+      .matches.filter((item) => item.kind === 'video');
+    assert.equal(results[0]?.id, 'video:ra6yeBDNl84', phrase);
+    assert.equal(results.length, 1, phrase);
   }
+});
+test('styles and tools match owner descriptions without labelling a whole collection incorrectly', () => {
+  const comic = search
+    .search('comic style')
+    .matches.filter((item) => item.kind === 'video');
+  assert.equal(comic.length, 2);
+  assert(comic.every((item) => item.projectTitle === 'Trufanism'));
+  assert.equal(
+    search
+      .search('client feedback')
+      .matches.filter((item) => item.kind === 'video').length,
+    1
+  );
+  assert(
+    search
+      .search('Magnetise Media')
+      .matches.filter((item) => item.kind === 'video').length >= 8
+  );
+  assert(
+    search
+      .search('motion graphics')
+      .matches.filter((item) => item.kind === 'video').length >= 25
+  );
+  assert(
+    search
+      .search('premier pro')
+      .matches.some((item) => item.projectTitle === 'Goodness Nature')
+  );
 });
 test('unknown queries remain empty and broad query prose is ignored', () => {
   assert.deepEqual(search.search('zxqvnonexistent'), {

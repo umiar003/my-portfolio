@@ -6,6 +6,7 @@ import {
   categoryHref,
   categoryTitle,
   industryLabels,
+  resolveIndustryFilter,
   mediaIndustries,
   projectHref,
   videoHref,
@@ -121,7 +122,7 @@ export function DetailView({
             <Link
               replace={overlay}
               key={industry}
-              href={`/projects?industry=${industry}`}
+              href={`/projects?industry=${resolveIndustryFilter(industry)?.id ?? industry}`}
               className="rounded-full border px-3 py-1 text-xs text-neutral-600 hover:bg-neutral-100"
             >
               {industryLabels[industry] ?? industry}
@@ -133,6 +134,18 @@ export function DetailView({
         <>
           <VideoPlayer key={selected.id} video={selected} />
           <p className="text-neutral-600">{selected.description}</p>
+          <div className="flex flex-wrap gap-2" aria-label="Editing styles">
+            {[...new Set([...(selected.styles ?? project.styles ?? [])])].map(
+              (style) => (
+                <span
+                  key={style}
+                  className="rounded-full bg-teal-50 px-3 py-1.5 text-xs text-teal-800"
+                >
+                  {style}
+                </span>
+              )
+            )}
+          </div>
         </>
       ) : (
         <>
