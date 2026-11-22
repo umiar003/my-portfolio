@@ -1,78 +1,62 @@
-'use client';
-
-import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowUpRight } from 'lucide-react';
+import { socialLinks } from '@/lib/social-links';
 
 export function Contact() {
-  // Contact information
-  const contactInfo = {
-    name: 'Muhammad Umair',
-    email: 'umair.official.pk@gmail.com',
-    handle: '@umair',
-    socials: [
-      {
-        name: 'LinkedIn',
-        url: 'https://www.linkedin.com/in/iamumair003/',
-      },
-      {
-        name: 'Youtube',
-        url: 'https://www.youtube.com/@iamumair003',
-      },
-      {
-        name: 'Whatsapp',
-        url: 'https://api.whatsapp.com/send?phone=923245421874',
-      },
-    ],
-  };
-
-  // Function to handle opening links
-  const openLink = (url: string) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
-
   return (
-    <div className="mx-auto mt-8 w-full relative z-10">
-      <div className="bg-accent w-full overflow-hidden rounded-3xl px-6 py-8 font-sans sm:px-10 md:px-16 md:py-12">
-        {/* Header Section */}
-        <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between">
-          <h2 className="text-foreground text-3xl font-semibold md:text-4xl">
-            Contacts
-          </h2>
-          <span className="mt-2 sm:mt-0">
-            {contactInfo.handle}
-          </span>
+    <section className="relative z-10 mx-auto mt-8 w-full">
+      <div className="bg-accent rounded-3xl px-5 py-8 sm:px-10 md:px-16 md:py-12">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-3xl font-semibold md:text-4xl">Contacts</h2>
+          <span className="text-muted-foreground">@umair</span>
         </div>
-
-        {/* Email Section */}
-        <div className="mt-8 flex flex-col md:mt-10">
-          <div
-            className="group mb-5 cursor-pointer"
-            onClick={() => openLink(`mailto:${contactInfo.email}`)}
+        <p className="mt-4 text-neutral-600">
+          I’m most available on WhatsApp and Upwork.
+        </p>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a
+            href={socialLinks.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl bg-emerald-800 px-5 py-3 font-semibold text-white hover:bg-emerald-900"
           >
-            <div className="flex items-center gap-1">
-              <span className="text-base font-medium text-blue-500 hover:underline sm:text-lg">
-                {contactInfo.email}
-              </span>
-              <ChevronRight className="h-5 w-5 text-blue-500 transition-transform duration-300 group-hover:translate-x-1" />
-            </div>
-          </div>
-
-          {/* Social Links */}
-          <div className="flex flex-wrap gap-x-6 gap-y-5 sm:gap-x-8">
-            {contactInfo.socials.map((social) => (
-              <button
-                key={social.name}
-                className="text-muted-foreground hover:text-foreground cursor-pointer text-sm transition-colors"
-                onClick={() => openLink(social.url)}
-                title={social.name}
-              >
-                {social.name}
-              </button>
-            ))}
-          </div>
+            <Image
+              src="/whatsapp.png"
+              alt=""
+              height={24}
+              width={24}
+              className="rounded-full bg-white p-0.5"
+            />
+            Message on WhatsApp
+          </a>
+          <a
+            href={socialLinks.upwork}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-12 items-center justify-center gap-3 rounded-xl border border-emerald-800 bg-white px-5 py-3 font-semibold text-emerald-900 hover:bg-emerald-50"
+          >
+            <Image src="/upworkicon.png" alt="" height={24} width={24} />
+            Hire me on Upwork
+          </a>
+        </div>
+        <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+          <a
+            href="mailto:umair.official.pk@gmail.com"
+            className="underline underline-offset-4"
+          >
+            umair.official.pk@gmail.com
+          </a>
+          <a
+            href={socialLinks.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 hover:underline"
+          >
+            LinkedIn <ArrowUpRight size={15} />
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

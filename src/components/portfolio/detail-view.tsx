@@ -8,6 +8,7 @@ import {
   industryLabels,
   resolveIndustryFilter,
   mediaIndustries,
+  mediaCategories,
   projectHref,
   videoHref,
   thumbnail,
@@ -21,6 +22,20 @@ export const OverlayContext = createContext(false);
 
 function VideoPlayer({ video }: { video: Media }) {
   const [playing, setPlaying] = useState(false);
+  if (video.src)
+    return (
+      <video
+        controls
+        playsInline
+        preload="none"
+        poster={video.poster}
+        src={video.src}
+        aria-label={video.title}
+        className={`mx-auto block max-h-[75vh] w-full rounded-2xl bg-neutral-950 object-contain ${video.orientation === 'portrait' ? 'aspect-[9/16] max-w-sm' : 'aspect-video'}`}
+      >
+        <a href={video.src}>Open {video.title}</a>
+      </video>
+    );
   return (
     <div className="space-y-3">
       {video.availability === 'unconfirmed' && (
@@ -108,8 +123,16 @@ export function DetailView({
       </div>
       <header>
         <p className="mb-3 text-xs font-medium tracking-[0.18em] text-neutral-500 uppercase">
-          {categoryTitle(project.category)} ·{' '}
-          {selected ? project.title : project.year}
+          {[
+            selected
+              ? mediaCategories(project, selected)
+                  .map(categoryTitle)
+                  .join(' · ')
+              : categoryTitle(project.category),
+            selected ? project.title : project.year,
+          ]
+            .filter(Boolean)
+            .join(' · ')}
         </p>
         <h1 className="text-3xl leading-tight font-semibold tracking-tight sm:text-5xl">
           {selected?.title ?? project.title}
@@ -135,16 +158,19 @@ export function DetailView({
           <VideoPlayer key={selected.id} video={selected} />
           <p className="text-neutral-600">{selected.description}</p>
           <div className="flex flex-wrap gap-2" aria-label="Editing styles">
-            {[...new Set([...(selected.styles ?? project.styles ?? [])])].map(
-              (style) => (
-                <span
-                  key={style}
-                  className="rounded-full bg-teal-50 px-3 py-1.5 text-xs text-teal-800"
-                >
-                  {style}
-                </span>
-              )
-            )}
+            {[
+              ...new Set([
+                ...(selected.styles ?? project.styles ?? []),
+                ...(selected.categories ? (selected.tags ?? []) : []),
+              ]),
+            ].map((style) => (
+              <span
+                key={style}
+                className="rounded-full bg-teal-50 px-3 py-1.5 text-xs text-teal-800"
+              >
+                {style}
+              </span>
+            ))}
           </div>
         </>
       ) : (
@@ -165,57 +191,93 @@ export function DetailView({
             </div>
           </div>
           <div className="space-y-8">
-            {project.media.map((media) =>
-              media.type === 'video' ? (
-                <section key={media.id} className="space-y-3">
-                  <Link
-                    href={videoHref(project, media)}
-                    replace={overlay}
-                    scroll={!overlay}
-                    className="group relative block aspect-video overflow-hidden rounded-2xl bg-neutral-100"
-                    aria-label={`Open video: ${media.title}`}
-                  >
+            {project.media
+              .filter(
+                (media) => !project.graphicsHeading || media.type === 'video'
+              )
+              .map((media) =>
+                media.type === 'video' ? (
+                  <section key={media.id} className="space-y-3">
+                    {project.featuredVideo === media.id ? (
+                      <VideoPlayer video={media} />
+                    ) : (
+                      <Link
+                        href={videoHref(project, media)}
+                        replace={overlay}
+                        scroll={!overlay}
+                        className="group relative block aspect-video overflow-hidden rounded-2xl bg-neutral-100"
+                        aria-label={`Open video: ${media.title}`}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={thumbnail(media)}
+                          alt={media.title}
+                          loading="lazy"
+                          className="h-full w-full object-contain transition group-hover:scale-[1.02]"
+                        />
+                        <span className="absolute inset-0 flex items-center justify-center">
+                          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/95 shadow-lg">
+                            <Play fill="currentColor" size={23} />
+                          </span>
+                        </span>
+                      </Link>
+                    )}
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <Link
+                        href={videoHref(project, media)}
+                        replace={overlay}
+                        scroll={!overlay}
+                        className="text-base font-medium hover:underline"
+                      >
+                        {media.title}
+                      </Link>
+                      <ShareButton
+                        href={videoHref(project, media)}
+                        label="Copy video link"
+                      />
+                    </div>
+                  </section>
+                ) : (
+                  <figure key={media.id}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src={thumbnail(media)}
+                      src={media.src}
                       alt={media.title}
                       loading="lazy"
-                      className="h-full w-full object-contain transition group-hover:scale-[1.02]"
+                      className="mx-auto h-auto max-h-[800px] w-full rounded-2xl object-contain"
                     />
-                    <span className="absolute inset-0 flex items-center justify-center">
-                      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white/95 shadow-lg">
-                        <Play fill="currentColor" size={23} />
-                      </span>
-                    </span>
-                  </Link>
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <Link
-                      href={videoHref(project, media)}
-                      replace={overlay}
-                      scroll={!overlay}
-                      className="text-base font-medium hover:underline"
-                    >
-                      {media.title}
-                    </Link>
-                    <ShareButton
-                      href={videoHref(project, media)}
-                      label="Copy video link"
-                    />
-                  </div>
-                </section>
-              ) : (
-                <figure key={media.id}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={media.src}
-                    alt={media.title}
-                    loading="lazy"
-                    className="mx-auto h-auto max-h-[800px] w-full rounded-2xl object-contain"
-                  />
-                </figure>
-              )
-            )}
+                  </figure>
+                )
+              )}
           </div>
+          {project.graphicsHeading && (
+            <section
+              aria-label={project.graphicsHeading}
+              className="space-y-4 border-t pt-8"
+            >
+              <h2 className="text-xl font-semibold">
+                {project.graphicsHeading}
+              </h2>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {project.media
+                  .filter((m) => m.type === 'image')
+                  .map((graphic) => (
+                    <figure key={graphic.id}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={graphic.src}
+                        alt={graphic.title}
+                        loading="lazy"
+                        className="h-auto w-full rounded-2xl"
+                      />
+                      <figcaption className="mt-2 text-sm text-neutral-600">
+                        {graphic.title}
+                      </figcaption>
+                    </figure>
+                  ))}
+              </div>
+            </section>
+          )}
         </>
       )}
       {related.length > 0 && (

@@ -8,6 +8,12 @@ import { Film, PenTool, MonitorPlay, Users, Sparkles } from 'lucide-react';
 const Skills = () => {
   const skillsData = [
     {
+      category: 'AI Creativity',
+      icon: <Sparkles className="h-5 w-5" />,
+      skills: ['Claude', 'HeyGen', 'Higgsfield', 'Prompt Engineering', 'AI Video Generation', 'Claude Code', 'AI-Assisted Editing', 'AI UGC Ads'],
+      color: 'bg-teal-50 text-teal-700 border border-teal-200',
+    },
+    {
       category: 'Video Editing & Motion Graphics',
       icon: <Film className="h-5 w-5" />,
       skills: [

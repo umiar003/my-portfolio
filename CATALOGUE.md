@@ -4,6 +4,16 @@ All projects and media are maintained in **src/data/projects.json**. Routes, fil
 
 ## Adding work
 
+### Portfolio reviewed on 22 November 2026
+
+The approved catalogue contains 17 collections and 121 videos. VitaeSmile, KC Consultancy Firm, Ikhlax, Podcast Reel Edit using AI tool, AI UGC Ads, and My Personal AI Video were added. BizWorldExplorer replaced Titans with eight documentaries. Royal was also removed. Titans was withdrawn by its owner and must stay out of future catalogues.
+
+Projects and videos have direct links and can open in popups while browsing. MiniSearch searches the descriptions, styles, tools, and tags. Videos can appear in multiple categories. Ikhlax graphics appear only inside its collection. The Projects page leads with the category filters and includes AI and Claude Edited search suggestions.
+
+The homepage uses the AI Specialist, Video Editor, and Graphic & Motion Designer title, updated avatar, Explore shortcuts, and Upwork link. The Me section has the updated portrait, biography, and intro video. AI Creativity leads Skills. WhatsApp and Upwork are the primary contact options. The original liquid cursor is shared across portfolio pages.
+
+### Catalogue entries
+
 Add a media entry to its parent project's `media` array. A video needs `id`, `type: "video"`, `youtubeId`, `title`, `description`, `format`, `industries`, and `tags`. Use its YouTube ID as its permanent `id`. The URL is `/projects/PROJECT-ID/videos/VIDEO-ID`. Never change a published ID when renaming or reordering work.
 
 Use a descriptive title, a factual one-sentence summary, and relevant tags. Video-specific subjects belong on that video. Project-wide tags and industries are inherited. Supported formats are `short-form`, `long-form`, and `advertisement`. The optional `orientation` is `portrait` or `landscape`; leave it unset for the existing landscape YouTube uploads, including uploads containing a vertical edit inside a landscape frame.
@@ -12,13 +22,19 @@ An image needs `id`, `type: "image"`, `src`, and `title`. Put its file under `pu
 
 Add new projects using the same structure as an existing entry, with a permanent lowercase `id`, a valid category, a public cover image, description, year, skills, industries, tags, and media. Current category definitions and industry labels are in `src/lib/catalogue.ts`. Categories are collections, formats describe videos, and industries describe the client's field.
 
+For a local MP4, use a stable descriptive `id`, a public `src` and a lightweight `poster` instead of a YouTube ID. Local files use the browser's player. A YouTube entry can also supply a local poster. Set `featuredVideo` on a project to offer its main episode inline. Keep the main video first in the media array.
+
+Each video can specify its own `categories` in display order, such as `["ai", "ugc", "ecommerce", "reels-shorts"]`. This list replaces the parent category for that video. Older entries inherit their project's category. A collection appears in each category containing one of its videos. Optional per-video `tools` override project skills in the search index.
+
+Use `graphicsHeading` for a project with a separate artwork section. Its images appear beneath the videos on the project detail page. Only projects and videos have routes and search entries. Use a video frame for the cover when the graphics are reserved for the project page.
+
 New content becomes searchable automatically when the site is rebuilt and deployed. No separate search index update is necessary.
 
 ## Metadata provenance
 
 The migration preserved every original YouTube ID and all local gallery images. Public YouTube oEmbed titles were available for 87 of 92 videos. The seven Viral 3D thumbnails were also reviewed to replace vague upload titles with factual descriptions. This was a metadata/thumbnail review, not a full playback review of all 92 videos.
 
-On 17 November 2026, the owner supplied project/video summaries, editing styles, and tools. These now form the catalogue's descriptions and style fields. Royal and its five unavailable videos were removed at the owner's request; 11 collections and 87 original video IDs remain. Existing retained IDs and URLs are unchanged.
+The owner supplied project/video summaries, editing styles, and tools. Royal and its five unavailable videos were removed. On 22 November 2026, the owner withdrew Titans and replaced its eight videos with eight BizWorldExplorer documentaries. The replacement titles, subjects, and cover artwork come from the supplied uploads and their YouTube metadata. Keep the withdrawn project, its videos, and its cover out of future releases.
 
 The notes repeat a Self-Made Mind URL for two different videos; the existing correct video IDs were retained. The six numbered Viral 3D descriptions do not correspond one-to-one with the seven existing uploads. The extra known talking-head clip is retained; the general insurance introduction is mapped to the SaveMoney Hub upload and the wedding-insurance description to the known wedding video. Specific per-video styles override collection-wide style defaults, so a testimonial or comic-style edit does not incorrectly label every video in its collection.
 
@@ -28,7 +44,7 @@ The notes repeat a Self-Made Mind URL for two different videos; the existing cor
 
 `src/lib/portfolio-search.ts` builds MiniSearch from the catalogue in the visitor's browser. It searches individual descriptions, titles, project names, styles, tools, and tags. General project descriptions are indexed for broader suggestions rather than turning every video into an exact match for a topic mentioned anywhere in its collection. Complete multi-term matches come first, followed by separately labelled partial-topic or style suggestions. Prefix matching, conservative typo tolerance, and common spellings such as McDonald's/McDonalds/mcdonals are supported.
 
-Categories (All Work, Youtube Videos, Reels/Shorts, Ecommerce) are the prominent browse control. Industry browsing uses six broader groups defined in `src/lib/catalogue.ts`; specific Business, Health & wellness, and other tags stay on individual work. Categories and industries are mutually exclusive: choosing an industry searches across all categories, and selecting a category clears the industry. Industry takes precedence when an old URL contains both. The format filter has been removed. Text search can refine either browsing mode.
+The category controls are All Work, Youtube Videos, Reels/Shorts, Ecommerce, AI and UGC. Each count is the number of distinct videos in that category. Industry browsing uses six broader groups defined in `src/lib/catalogue.ts`. Choosing an industry searches across all categories. Selecting a category clears the industry. Industry takes precedence when an old URL contains both. Text search can refine either browsing mode.
 
 Default browsing presents a grid of every matching collection followed by video previews diversified across collections. Show more reveals additional videos. Popup navigation preserves the underlying gallery's query, filters, expanded video count, focus, and scroll context.
 

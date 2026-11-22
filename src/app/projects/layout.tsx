@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { socialLinks } from '@/lib/social-links';
 import { PortfolioNavigation } from '@/components/portfolio/navigation-context';
 
 export default function ProjectsLayout({
@@ -28,10 +29,12 @@ export default function ProjectsLayout({
       <footer className="mx-auto mt-12 max-w-5xl border-t px-5 py-7 text-xs text-neutral-500">
         Have a project in mind?{' '}
         <a
-          href="mailto:umair.official.pk@gmail.com"
+          href={socialLinks.whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
           className="underline underline-offset-4"
         >
-          Let’s talk.
+          Message me on WhatsApp.
         </a>
       </footer>
     </div>

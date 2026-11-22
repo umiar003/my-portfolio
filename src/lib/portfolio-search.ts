@@ -3,6 +3,7 @@ import {
   categoryTitle,
   industryLabels,
   mediaIndustries,
+  mediaCategories,
   projects,
   projectHref,
   videoHref,
@@ -20,6 +21,7 @@ export interface SearchItem {
   description: string;
   projectDescription: string;
   category: string;
+  categories: string[];
   industries: string[];
   styles: string;
   tools: string;
@@ -112,15 +114,16 @@ const videoItem = (project: Project, media: Media): SearchItem => ({
   projectTitle: project.title,
   description: media.description ?? '',
   projectDescription: project.description,
-  category: project.category,
+  category: mediaCategories(project, media)[0],
+  categories: mediaCategories(project, media),
   industries: mediaIndustries(project, media),
   styles: (media.styles ?? project.styles ?? []).join(' '),
-  tools: project.skills.join(' '),
+  tools: (media.tools ?? project.skills).join(' '),
   tags: [
     ...project.tags,
     ...(media.tags ?? []),
     media.format ?? '',
-    categoryTitle(project.category),
+    ...mediaCategories(project, media).map(categoryTitle),
     ...(media.format === 'advertisement'
       ? ['advertisement', 'product promotion']
       : []),
@@ -138,6 +141,14 @@ export const searchItems: SearchItem[] = projects.flatMap((project) => [
     description: project.description,
     projectDescription: '',
     category: project.category,
+    categories: [
+      ...new Set([
+        project.category,
+        ...project.media
+          .filter((m) => m.type === 'video')
+          .flatMap((m) => mediaCategories(project, m)),
+      ]),
+    ],
     industries: [
       ...new Set([
         ...project.industries,
@@ -168,7 +179,7 @@ function allowed(item: SearchItem, filters: SearchFilters) {
   const industry = resolveIndustryFilter(filters.industry);
   return industry
     ? item.industries.some((value) => industry.industries.includes(value))
-    : !filters.category || item.category === filters.category;
+    : !filters.category || item.categories.includes(filters.category);
 }
 const relationships = [
   {
@@ -214,7 +225,7 @@ export function createPortfolioSearch() {
         tools: 1,
         projectDescription: 0.5,
       },
-      prefix: true,
+      prefix: (term) => term !== 'ai' && term !== 'ugc',
       fuzzy: (term) => (term.length >= 5 ? 0.2 : false),
       combineWith: 'AND',
     },
@@ -326,16 +337,17 @@ export function createPortfolioSearch() {
       const terms = queryTerms(query).map(normalizeTerm);
       if (!terms.length) return [];
       const examples = [
+        'AI UGC ads',
+        'Claude Edited',
+        'podcast shorts',
+        'HeyGen',
         'documentary',
         'motion graphics',
         '3D reels',
         'faceless videos',
         'product showcase',
-        'comic style',
-        'McDonalds history',
-        'Magnetise Media',
+        'BMW comeback',
         '2D character animation',
-        'client feedback',
         'luxury fashion',
         'BBC Our Planet',
         'Formula 1',

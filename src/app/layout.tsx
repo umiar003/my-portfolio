@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
+import FluidCursor from "@/components/FluidCursor";
 import "./globals.css";
 
 // Load Inter font for non-Apple devices
@@ -49,6 +50,7 @@ export default function RootLayout({
             {children}
           </main>
           <Toaster />
+          <FluidCursor />
         </ThemeProvider>
         <Analytics />
       </body>

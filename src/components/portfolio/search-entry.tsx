@@ -27,14 +27,17 @@ export function SearchEntry() {
       <div className="mt-3 flex flex-wrap justify-center gap-2 text-xs text-neutral-500">
         <span className="py-1">Explore</span>
         {[
-          ['Documentary', 'documentary'],
-          ['3D reels', '3d reels'],
-          ['Service ads', 'service ads'],
-        ].map(([label, q]) => (
+          ['AI Videos', '/projects/category/ai'],
+          ['Ecommerce Ads', '/projects/category/ecommerce?q=ads'],
+          ['Youtube', '/projects/category/youtube-videos'],
+          ['Documentary', '/projects?q=documentary'],
+          ['3D reels', '/projects?q=3d%20reels'],
+          ['Service ads', '/projects?q=service%20ads'],
+        ].map(([label, href]) => (
           <Link
-            key={q}
+            key={href}
             className="rounded-full border bg-white/80 px-3 py-1 hover:border-neutral-500"
-            href={`/projects?q=${encodeURIComponent(q)}`}
+            href={href}
           >
             {label}
           </Link>

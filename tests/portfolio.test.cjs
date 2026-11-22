@@ -33,9 +33,7 @@ const search = createPortfolioSearch();
 
 test('all retained original videos survive exactly once and Royal is removed', () => {
   const actual = projects
-    .flatMap((p) =>
-      p.media.filter((m) => m.type === 'video').map((m) => m.youtubeId)
-    )
+    .flatMap((p) => p.media.filter((m) => m.type === 'video').map((m) => m.id))
     .sort();
   const original = require('./legacy-video-ids.json').sort();
   for (const id of original)
@@ -45,8 +43,7 @@ test('all retained original videos survive exactly once and Royal is removed', (
       `Original video ${id} must be preserved exactly once`
     );
   assert.equal(new Set(actual).size, actual.length);
-  assert.equal(projects.length, 11);
-  assert.equal(actual.length, 87);
+  assert.equal(original.length, 79);
   assert.equal(getProject('royal'), undefined);
   assert(!searchItems.some((item) => item.href.includes('/royal')));
 });
@@ -63,7 +60,19 @@ test('identifiers, media, references, and route targets are valid', () => {
     assert.equal(projectHref(project), `/projects/${project.id}`);
     for (const media of project.media) {
       if (media.type === 'video') {
-        assert.match(media.youtubeId, /^[a-zA-Z0-9_-]{11}$/);
+        assert.notEqual(Boolean(media.youtubeId), Boolean(media.src));
+        if (media.youtubeId)
+          assert.match(media.youtubeId, /^[a-zA-Z0-9_-]{11}$/);
+        else {
+          assert(fs.existsSync(path.join(__dirname, '../public', media.src)));
+          assert(media.poster);
+        }
+        if (media.poster)
+          assert(
+            fs.existsSync(path.join(__dirname, '../public', media.poster))
+          );
+        for (const category of media.categories ?? [])
+          assert(categories.some((c) => c.id === category));
         assert.equal(getVideo(project, media.id), media);
         assert.equal(
           videoHref(project, media),
@@ -77,8 +86,8 @@ test('identifiers, media, references, and route targets are valid', () => {
   assert.equal(getVideo(projects[0], 'missing'), undefined);
 });
 test('title terms locate individual videos rather than just their parent', () => {
-  const found = search.search('Rolex').matches;
-  assert(found.some((r) => r.kind === 'video' && r.title.includes('Rolex')));
+  const found = search.search('BMW').matches;
+  assert(found.some((r) => r.kind === 'video' && r.title.includes('BMW')));
   assert(found.every((r) => r.href.startsWith('/projects/')));
 });
 test('fuzzy matching handles misspellings', () =>
@@ -113,7 +122,9 @@ test('car wash alternatives are labelled separately and never fabricated as exac
 });
 test('category browsing is independent and industry overrides old combined filters', () => {
   const ecommerce = search.search('', { category: 'ecommerce' });
-  assert(ecommerce.matches.every((item) => item.category === 'ecommerce'));
+  assert(
+    ecommerce.matches.every((item) => item.categories.includes('ecommerce'))
+  );
   const industry = search.search('', {
     category: 'youtube-videos',
     industry: 'brands-services',
@@ -163,19 +174,132 @@ test('owner descriptions are searchable even when a subject is absent from tags'
       .matches.some((item) => item.id === 'video:9R4z37-jnb4')
   );
 });
-test('McDonalds spellings resolve to the correct documentary', () => {
-  for (const phrase of [
-    'mcdonals',
-    'McDonalds',
-    "McDonald's",
-    'history of mcdonals',
+
+test('supplied campaigns retain their media, order and provider', () => {
+  const vitae = getProject('vitaesmile');
+  assert.deepEqual(
+    vitae.media.slice(0, 4).map((m) => path.basename(m.src)),
+    [
+      'Minimal Motion Grpahic Whitening Stripe Video.mp4',
+      'Fun Music Product promo whitening Stripe.mp4',
+      'Fast Stomp Promo style video of whitening stripe.mp4',
+      'Fun Fast video about whitening stripe.mp4',
+    ]
+  );
+  const kc = getProject('kc-consultancy-firm');
+  assert.deepEqual(
+    kc.media.map((m) => m.youtubeId),
+    ['0gjtoRoT14U', 'PfP6uvXiBsQ', 'ExmbB11FVbQ', 'xcfqc34NQr0']
+  );
+  assert.equal(kc.featuredVideo, kc.media[0].id);
+  assert.equal(
+    getProject('my-personal-ai-video').media[0].youtubeId,
+    '2P8j-w3OWeA'
+  );
+  for (const [slug, folder] of [
+    ['vitaesmile', 'VitaeSmile'],
+    ['ikhlax', 'AI Work/ikhlax'],
+    ['ai-podcast-reel-edit', 'AI Work/Podcast Reel Edit using AI tool'],
+    ['ai-ugc-ads', 'AI Work/AI UGC Ads'],
   ]) {
-    const results = search
-      .search(phrase)
-      .matches.filter((item) => item.kind === 'video');
-    assert.equal(results[0]?.id, 'video:ra6yeBDNl84', phrase);
-    assert.equal(results.length, 1, phrase);
+    const names = fs
+      .readdirSync(path.join(__dirname, '../public', folder))
+      .filter((f) => /\.(mp4|png|jpg)$/i.test(f));
+    assert.deepEqual(
+      getProject(slug)
+        .media.map((m) => path.basename(m.src))
+        .sort(),
+      names.sort()
+    );
   }
+});
+
+test('per-video discovery finds cross-category ads, podcast shorts and HeyGen footage', () => {
+  const videos = (q, category) =>
+    search
+      .search(q, { category })
+      .matches.filter((x) => x.kind === 'video')
+      .map((x) => x.id);
+  const ads = getProject('ai-ugc-ads').media;
+  for (const m of ads) {
+    for (const cat of ['ai', 'ugc', 'reels-shorts'])
+      assert(videos('UGC', cat).includes('video:' + m.id));
+    assert.equal(
+      videos('', 'ecommerce').includes('video:' + m.id),
+      !m.tags.includes('Software Ad')
+    );
+  }
+  const stomp = getProject('vitaesmile').media[2];
+  for (const cat of ['ai', 'ecommerce', 'reels-shorts'])
+    assert(videos('HeyGen', cat).includes('video:' + stomp.id));
+  assert(!videos('HeyGen', 'ugc').includes('video:' + stomp.id));
+  const kc = getProject('kc-consultancy-firm');
+  for (const [i, m] of kc.media.entries()) {
+    assert.equal(
+      videos('podcast', 'youtube-videos').includes('video:' + m.id),
+      i === 0
+    );
+    assert.equal(
+      videos('podcast', 'reels-shorts').includes('video:' + m.id),
+      i > 0
+    );
+  }
+  assert.equal(
+    videos('Claude Code', 'ai').filter((id) =>
+      getProject('ai-podcast-reel-edit').media.some(
+        (m) => id === 'video:' + m.id
+      )
+    ).length,
+    4
+  );
+});
+
+test('Ikhlax graphics are project-only and follow all eight reels', () => {
+  const p = getProject('ikhlax');
+  assert.deepEqual(
+    p.media.map((m) => m.type),
+    [...Array(8).fill('video'), ...Array(7).fill('image')]
+  );
+  for (const image of p.media.slice(8)) {
+    assert(
+      !searchItems.some(
+        (item) => item.image === image.src || item.id === 'video:' + image.id
+      )
+    );
+    assert.equal(getVideo(p, image.id), undefined);
+  }
+});
+test('withdrawn project is absent and its replacement preserves the supplied video order', () => {
+  assert.equal(getProject('titans'), undefined);
+  assert(!searchItems.some((item) => item.href.startsWith('/projects/titans')));
+  const videos = getProject('bizworldexplorer').media;
+  assert.deepEqual(
+    videos.map((m) => m.youtubeId),
+    [
+      'VXmqBSKoFaw',
+      'MRQ2C0IGG8k',
+      '6rtISwKs8s4',
+      'LU2LLiQvN78',
+      'V3iEBeKYBzM',
+      'esBda6x-xt4',
+      'r4csCaI5Fdc',
+      'wsqmxUUN2QQ',
+    ]
+  );
+  assert(
+    search
+      .search('BMW comeback', { category: 'youtube-videos' })
+      .matches.some((item) => item.id === 'video:MRQ2C0IGG8k')
+  );
+  const edits = search
+    .search('Claude Edited')
+    .matches.filter((item) => item.kind === 'video');
+  assert.deepEqual(
+    edits.map((i) => i.href).sort(),
+    getProject('ai-podcast-reel-edit')
+      .media.map((m) => '/projects/ai-podcast-reel-edit/videos/' + m.id)
+      .sort()
+  );
 });
 test('styles and tools match owner descriptions without labelling a whole collection incorrectly', () => {
   const comic = search
@@ -188,11 +312,6 @@ test('styles and tools match owner descriptions without labelling a whole collec
       .search('client feedback')
       .matches.filter((item) => item.kind === 'video').length,
     1
-  );
-  assert(
-    search
-      .search('Magnetise Media')
-      .matches.filter((item) => item.kind === 'video').length >= 8
   );
   assert(
     search
@@ -211,8 +330,8 @@ test('unknown queries remain empty and broad query prose is ignored', () => {
     related: [],
   });
   assert.deepEqual(
-    search.search('show me videos of Rolex'),
-    search.search('Rolex')
+    search.search('show me videos of BMW'),
+    search.search('BMW')
   );
 });
 test('results stay stable across repeated searches and video recommendations exclude self', () => {

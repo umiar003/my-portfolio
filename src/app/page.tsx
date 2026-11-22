@@ -1,6 +1,6 @@
 'use client';
 
-import FluidCursor from '@/components/FluidCursor';
+import { socialLinks } from '@/lib/social-links';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import {
@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { SearchEntry } from '@/components/portfolio/search-entry';
 import { Presentation } from '@/components/presentation';
 import Skills from '@/components/skills';
@@ -53,12 +53,6 @@ export default function Home() {
     },
   };
 
-  useEffect(() => {
-    // Preload the hero image
-    const img = new window.Image();
-    img.src = '/landing-memojis.png';
-  }, []);
-
   return (
     <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 pb-10 md:pb-20">
       {/* big blurred footer word */}
@@ -71,12 +65,11 @@ export default function Home() {
         </div>
       </div>
 
-      {/* GitHub button (now social icons) */}
-      <div className="absolute top-6 right-8 z-20 flex gap-4">
+      <div className="absolute top-4 right-2 z-20 flex gap-0.5 sm:top-5 sm:right-6 sm:gap-2">
         <a
-          href="https://www.linkedin.com/in/iamumair003/"
+          href={socialLinks.linkedin}
           title="LinkedIn"
-          className="hover:opacity-80"
+          className="grid size-11 place-items-center rounded-full hover:bg-neutral-100"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -87,9 +80,9 @@ export default function Home() {
           />
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=923245421874"
+          href={socialLinks.whatsapp}
           title="WhatsApp"
-          className="hover:opacity-80"
+          className="grid size-11 place-items-center rounded-full hover:bg-neutral-100"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -99,9 +92,18 @@ export default function Home() {
             style={{ width: '32px', height: '32px' }}
           />
         </a>
+        <a
+          href={socialLinks.upwork}
+          title="Upwork"
+          className="grid size-11 place-items-center rounded-full hover:bg-neutral-100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src="/upworkicon.png" alt="Upwork" width={32} height={32} />
+        </a>
       </div>
 
-      <div className="absolute top-6 left-6 z-20">
+      <div className="absolute top-6 left-2 z-20 sm:left-6">
         <button className="relative flex cursor-pointer items-center gap-2 rounded-full border bg-white/30 px-4 py-1.5 text-sm font-medium text-black shadow-md backdrop-blur-lg transition hover:bg-white/60 dark:border-white dark:text-white dark:hover:bg-neutral-800">
           {/* Green pulse dot */}
           <span className="relative flex h-2 w-2">
@@ -164,7 +166,7 @@ export default function Home() {
         <>
           {/* header */}
           <motion.div
-            className="z-1 mt-24 mb-8 flex flex-col items-center text-center md:mt-4 md:mb-12"
+            className="z-1 mt-20 mb-3 flex w-full flex-col items-center text-center sm:mt-24 sm:mb-6"
             variants={topElementVariants}
             initial="hidden"
             animate="visible"
@@ -176,20 +178,34 @@ export default function Home() {
             <h2 className="text-secondary-foreground mt-1 text-xl font-semibold md:text-2xl">
               Hey, I&apos;m Umair 👋
             </h2>
-            <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
-              Motion & Graphic Designer
+            <h1
+              className="mt-3 font-bold tracking-tight"
+              aria-label="AI Specialist | Video Editor | Graphic & Motion Designer"
+            >
+              <span className="block text-[clamp(1.45rem,5.7vw,4rem)] leading-[1.08]">
+                AI Specialist{' '}
+                <span className="align-[0.05em] font-light text-teal-600">
+                  |
+                </span>{' '}
+                Video Editor
+              </span>
+              <span className="sr-only"> | </span>
+              <span className="mt-1 block text-[clamp(1.2rem,4.3vw,3rem)] leading-tight text-neutral-600 dark:text-neutral-300">
+                Graphic &amp; Motion Designer
+              </span>
             </h1>
           </motion.div>
 
-          {/* centre memoji */}
+          {/* Homepage avatar */}
           <div className="relative z-10 h-52 w-48 overflow-hidden sm:h-72 sm:w-72">
             <Image
-              src="/landing-memojis.png"
-              alt="Hero memoji"
-              width={2000}
-              height={2000}
+              src="/avatar-landing.png"
+              alt="Umair’s illustrated avatar with headphones"
+              width={500}
+              height={500}
               priority
-              className="translate-y-14 scale-[2] object-cover"
+              unoptimized
+              className="h-full w-full object-contain"
             />
           </div>
 
@@ -228,7 +244,6 @@ export default function Home() {
           <SearchEntry />
         </>
       )}
-      <FluidCursor />
     </div>
   );
 }

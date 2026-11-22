@@ -13,6 +13,8 @@ import {
   Sparkles,
   ShoppingBag,
   ChevronDown,
+  Cpu,
+  Camera,
 } from 'lucide-react';
 import {
   categories,
@@ -36,14 +38,16 @@ const categoryIcons = {
   'youtube-videos': Film,
   'reels-shorts': Sparkles,
   ecommerce: ShoppingBag,
+  ai: Cpu,
+  ugc: Camera,
 };
 const suggestions = [
   'Documentary',
   '3D reels',
   'Product showcase',
   'Motion graphics',
-  'Comic style',
-  'Client feedback',
+  'AI',
+  'Claude Edited',
 ];
 const countText = (count: number, unit: string) =>
   `${count} ${unit}${count === 1 ? '' : 's'}`;
@@ -276,21 +280,9 @@ export function ProjectGallery({ category }: { category?: string }) {
           }
         />
       </div>
-      <header className="mb-7">
-        <p className="mb-3 text-[10px] font-semibold tracking-[0.22em] text-teal-700 uppercase">
-          The portfolio
-        </p>
-        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Explore my work<span className="text-teal-600">.</span>
-        </h1>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-neutral-500">
-          Documentaries, 3D reels, brand campaigns, and everything in between.
-          Pick a collection or find a video that fits your idea.
-        </p>
-      </header>
       <nav
         aria-label="Project categories"
-        className="grid grid-cols-2 gap-2.5 sm:grid-cols-4"
+        className="grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-6"
       >
         {[{ id: '', title: 'All Work' }, ...categories].map((item) => {
           const Icon = item.id
@@ -298,7 +290,8 @@ export function ProjectGallery({ category }: { category?: string }) {
             : Layers;
           const count = searchItems.filter(
             (entry) =>
-              entry.kind === 'video' && (!item.id || entry.category === item.id)
+              entry.kind === 'video' &&
+              (!item.id || entry.categories.includes(item.id))
           ).length;
           const active = (selectedCategory ?? '') === item.id;
           return (
@@ -343,7 +336,7 @@ export function ProjectGallery({ category }: { category?: string }) {
             type="search"
             value={query}
             onChange={(event) => updateQuery(event.target.value)}
-            placeholder="Try McDonalds, documentary, comic style…"
+            placeholder="Try BMW, documentary, or Claude Edited…"
             className="min-w-0 flex-1 bg-transparent text-base outline-none"
           />
           {query && (
@@ -392,7 +385,7 @@ export function ProjectGallery({ category }: { category?: string }) {
       </div>
       <div className="mt-8 mb-5 flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="text-xl font-semibold tracking-tight">
+          <h1 className="text-xl font-semibold tracking-tight">
             {hasQuery
               ? 'Search results'
               : selectedIndustry
@@ -400,7 +393,7 @@ export function ProjectGallery({ category }: { category?: string }) {
                 : selectedCategory
                   ? categoryTitle(selectedCategory)
                   : 'Collections'}
-          </h2>
+          </h1>
           <p role="status" className="mt-1 text-xs text-neutral-500">
             {hasQuery
               ? `${countText(matchesByKind.videos.length, 'video')} and ${countText(matchesByKind.collections.length, 'collection')} match your search`

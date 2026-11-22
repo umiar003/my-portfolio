@@ -1,16 +1,21 @@
 'use client';
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 import fluidCursor from '@/hooks/use-FluidCursor';
 
 const FluidCursor = () => {
+  const isHome = usePathname() === '/';
   useEffect(() => {
-    fluidCursor();
+    return fluidCursor();
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 z-0">
-      <canvas id="fluid" className="h-screen w-screen" />
+    <div
+      aria-hidden="true"
+      className={`pointer-events-none fixed inset-0 ${isHome ? 'z-0' : 'z-[65]'}`}
+    >
+      <canvas id="fluid" className="block h-full w-full" />
     </div>
   );
 };

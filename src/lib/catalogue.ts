@@ -4,6 +4,8 @@ export const categories = [
   { id: 'youtube-videos', title: 'Youtube Videos' },
   { id: 'reels-shorts', title: 'Reels/Shorts' },
   { id: 'ecommerce', title: 'Ecommerce' },
+  { id: 'ai', title: 'AI' },
+  { id: 'ugc', title: 'UGC' },
 ] as const;
 
 export const industryLabels: Record<string, string> = {
@@ -74,6 +76,9 @@ export interface Media {
   title: string;
   src?: string;
   youtubeId?: string;
+  poster?: string;
+  categories?: string[];
+  tools?: string[];
   description?: string;
   format?: 'short-form' | 'long-form' | 'advertisement';
   industries?: string[];
@@ -90,7 +95,9 @@ export interface Project {
   category: string;
   cover: string;
   description: string;
-  year: string;
+  year?: string;
+  featuredVideo?: string;
+  graphicsHeading?: string;
   skills: string[];
   industries: string[];
   tags: string[];
@@ -110,7 +117,9 @@ export const getProject = (id: string) =>
 export const getVideo = (project: Project, id: string) =>
   project.media.find((media) => media.type === 'video' && media.id === id);
 export const thumbnail = (video: Media) =>
-  `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`;
+  video.poster ?? `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`;
+export const mediaCategories = (project: Project, media: Media) =>
+  media.categories ?? [project.category];
 export const mediaIndustries = (project: Project, media: Media) => [
   ...new Set([...project.industries, ...(media.industries ?? [])]),
 ];

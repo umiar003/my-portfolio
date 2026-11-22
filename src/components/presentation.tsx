@@ -14,7 +14,20 @@ export function Presentation() {
     location: 'Islamabad, Pakistan',
     // Add a newline character after the emoji
     description:
-      "Hey 👋\nI'm umair, a 23-year-old video editor & motion graphics artist specializing in visual storytelling.  I’ve worked on everything from short films and brand videos to social media content, always aiming to make each frame count.\n\n Before diving deep into editing, I experimented with graphic designing and marketing, but now my heart belongs to the editing suite, turning raw footage into something that connects and inspires.✂️✨\n\n I’m really into branding, storytelling, and pushing the limits of creative media. What about you? What’s your story? 😊",
+      `👋Hi, I’m Umair! A creative storyteller with strong technical skills in:
+🎬 Adobe After Effects | Adobe Premiere Pro
+🤖 Claude AI + Heygen | Prompt Engineering
+🎨 Photoshop | Illustrator
+
+💡 What I do best:
+- Craft videos that engage & inspire
+- Use my AI prompt engineering expertise to bring creative ideas to life
+- Design visuals that leave a lasting impact
+- Collaborate openly to bring ideas to life
+
+I’m really into branding, storytelling, and pushing the limits of creative media. Before diving deep into editing, I experimented with graphic designing and marketing, but now my heart belongs to the editing suite, turning raw footage into something that connects and inspires.✂️✨ I’ve worked on everything from short films and brand videos to social media content, always aiming to make each frame count.😊
+
+🚀 Let’s create something visually unforgettable together!`,
     src: '/profil-raph.png',
     fallbackSrc:
       'https://images.unsplash.com/photo-1610216705422-caa3fcb6d158?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3',
@@ -48,8 +61,8 @@ export function Presentation() {
     <div className="mx-auto w-full max-w-5xl py-6 font-sans relative z-20">
       <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
         {/* Image section */}
-        <div className="relative mx-auto aspect-square w-full max-w-sm z-20">
-          <div className="relative h-full w-full overflow-hidden rounded-2xl">
+        <div className="relative mx-auto w-full max-w-sm z-20">
+          <div className="relative aspect-square w-full overflow-hidden rounded-2xl">
             <motion.div
               initial={{ scale: 0.92, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -59,8 +72,9 @@ export function Presentation() {
               <Image
                 src={profile.src}
                 alt={profile.name}
-                width={500}
-                height={500}
+                width={434}
+                height={421}
+                unoptimized
                 className="h-full w-full object-cover object-center"
                 onError={(e) => {
                   // Fallback to placeholder if image fails to load
@@ -163,7 +177,8 @@ export function Presentation() {
             {/* YouTube Video */}
             <div className="relative aspect-video w-full">
               <iframe
-                src="https://www.youtube.com/embed/4wRJAyxri6k?autoplay=1"
+                src="https://www.youtube-nocookie.com/embed/LZyGWpDKNCE?autoplay=1"
+                referrerPolicy="strict-origin-when-cross-origin"
                 title="See me in action"
                 className="w-full h-full"
                 frameBorder="0"
